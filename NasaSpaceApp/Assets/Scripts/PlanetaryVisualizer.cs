@@ -15,7 +15,6 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public float get_max_radius()
     {
-        Debug.Log($"{planetsData.GetComponent<PlanetDataManager>().currentSystem.planets.Count} planets");
 
         float max_radius = 0;
         foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
