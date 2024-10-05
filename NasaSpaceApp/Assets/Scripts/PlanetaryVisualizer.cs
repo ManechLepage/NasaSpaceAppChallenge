@@ -43,7 +43,7 @@ public class PlanetaryVisualizer : MonoBehaviour
         return get_position_from_polar(polarPosition);
     }
 
-    Vector2 get_position_from_polar(Vector2 polarPosition)
+    public Vector2 get_position_from_polar(Vector2 polarPosition)
     {
         float radius_ratio = polarPosition.x / get_max_radius();
         float radius = max_radius * radius_ratio;
