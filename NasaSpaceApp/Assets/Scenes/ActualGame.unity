@@ -449,13 +449,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 1428757205}
+  planetVisualiser: {fileID: 0}
   initialPosition: {x: 0, y: 0}
   initialTime: 0
   initialVelocity: 0
   initialAngle: 0
-  numPoints: 0
-  numSubSteps: 0
   timeStep: 0
+  numSubSteps: 0
 --- !u!4 &525422627
 Transform:
   m_ObjectHideFlags: 0
@@ -549,7 +549,7 @@ Transform:
   m_GameObject: {fileID: 806522144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.763, y: 0, z: 0}
+  m_LocalPosition: {x: 10.61, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
