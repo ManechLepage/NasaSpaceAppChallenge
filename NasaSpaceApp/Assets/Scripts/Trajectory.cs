@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Trajectory : MonoBehaviour
 {
-    
+    public PlanetDataManager planetDataManager;
+
     const float G = 6.67430e-11f;  // in m^3 kg^-1 s^-2
     const float Gadjusted = G * 10e18f * 10e-24f; // in 10e6 km^3 10e24 kg^-1 s^-2
     public PlanetDataManager data;
@@ -31,6 +32,19 @@ public class Trajectory : MonoBehaviour
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
     }
     
+    public void SetInitialTime(float time) {
+        initialTime = time;
+        data.time = time;
+    }
+
+    public void SetInitialVelocity(float velocity) {
+        initialVelocity = velocity;
+    }
+
+    public void SetInitialAngle(float angle) {
+        initialAngle = angle;
+    }
+
     void Update() {
         if (running) {
             for (int i = 0; i < numSubSteps; i++) {
