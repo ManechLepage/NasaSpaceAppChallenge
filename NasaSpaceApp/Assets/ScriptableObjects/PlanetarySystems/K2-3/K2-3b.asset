@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c6d280078697a4da05d1b48ea874ec, type: 3}
   m_Name: K2-3b
   m_EditorClassIdentifier: 
-  semiMajor: 11170000
+  semiMajor: 11.17
   eccentricity: 0.107
   mass: 30.52
+  period: 872640
   initialTime: 0
   time: 0
   radius: 0

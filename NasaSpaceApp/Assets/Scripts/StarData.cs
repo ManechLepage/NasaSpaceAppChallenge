@@ -15,5 +15,5 @@ public enum StarType
 public class StarData : ScriptableObject
 {
     public StarType type;
-    public double distance;  // from Earth in km
+    public double distance;  // from Earth in 10e6 km
 }
