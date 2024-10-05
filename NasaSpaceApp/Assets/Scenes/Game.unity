@@ -1094,6 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetarySystems:
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
+  - {fileID: 11400000, guid: e16d761125d1462439a95002f2ba9d7b, type: 2}
   currentSystem: {fileID: 0}
 --- !u!4 &1594215836
 Transform:

@@ -8,7 +8,8 @@ public enum StarType
     WhiteDwarf,
     NeutronStar,
     RedDwarf,
-    BrownDwarf
+    BrownDwarf,
+    OrangeDwarf
 }
 
 [CreateAssetMenu(fileName = "StarData", menuName = "Space/StarData", order = 2)]
