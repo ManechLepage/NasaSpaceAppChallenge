@@ -172,72 +172,6 @@ MonoBehaviour:
   speed: 0.03
   bg1: {fileID: 1168146352}
   bg2: {fileID: 1822758156}
---- !u!1001 &60329936
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1903620697}
-    m_Modifications:
-    - target: {fileID: -2051500809876267517, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: planetData
-      value: 
-      objectReference: {fileID: 11400000, guid: 371e415b33107d146866823c9224b22e, type: 2}
-    - target: {fileID: 5237359436996278333, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_Name
-      value: SystemPlanet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.496
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.044
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
---- !u!4 &60329937 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7614300233015134904, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
-  m_PrefabInstance: {fileID: 60329936}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &264305175
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,13 +449,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 1428757205}
+  planetVisualiser: {fileID: 0}
   initialPosition: {x: 0, y: 0}
   initialTime: 0
   initialVelocity: 0
   initialAngle: 0
-  numPoints: 0
-  numSubSteps: 0
   timeStep: 0
+  numSubSteps: 0
 --- !u!4 &525422627
 Transform:
   m_ObjectHideFlags: 0
@@ -615,7 +549,7 @@ Transform:
   m_GameObject: {fileID: 806522144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.763, y: 0, z: 0}
+  m_LocalPosition: {x: 10.61, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -913,6 +847,7 @@ MonoBehaviour:
   planetarySystems:
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
   currentSystem: {fileID: 0}
+  time: 0
 --- !u!4 &1428757206
 Transform:
   m_ObjectHideFlags: 0
@@ -1076,6 +1011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetarySystem: {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
+  planetPrefab: {fileID: 5237359436996278333, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
 --- !u!4 &1903620697
 Transform:
   m_ObjectHideFlags: 0
@@ -1088,8 +1024,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 60329937}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950031465
