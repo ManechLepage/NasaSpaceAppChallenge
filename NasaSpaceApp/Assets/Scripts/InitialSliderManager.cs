@@ -32,10 +32,10 @@ public class InitialSliderManager : MonoBehaviour
     void OnSliderChange(float value)
     {
         if (isTime)
-            trajectory.initialTime = value;
+            trajectory.SetInitialTime(value);
         else if (isAngle)
-            trajectory.initialAngle = value;
+            trajectory.SetInitialAngle(value);
         else if (isVelocity)
-            trajectory.initialVelocity = value;
+            trajectory.SetInitialVelocity(value);
     }
 }
