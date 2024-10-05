@@ -18,4 +18,5 @@ public class StarData : ScriptableObject
     public StarType type;
     public float distance;  // from Earth in 10e6 km
     public float mass;  // in 10e24 kg
+    public Color color;
 }

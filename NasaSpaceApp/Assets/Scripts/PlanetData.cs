@@ -9,7 +9,7 @@ public class PlanetData : ScriptableObject
     public float eccentricity;  // range 0-1
     public float mass;  // in 10e24 kg
     public float period;  // in s
-
+    public Color color;
 
     public Vector2 CalculatePosition(float time) {
         float realTime = time;
