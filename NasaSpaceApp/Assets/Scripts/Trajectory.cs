@@ -73,7 +73,7 @@ public class Trajectory : MonoBehaviour
             //reconvert position to polar
             float radius = position.magnitude;
             float angle = Mathf.Atan2(position.y, position.x);
-            lPos = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(radius, angle));
+            Vector2 lPos = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(radius, angle));
             prevTrajectory.Add(lPos);
             transform.localPosition = new Vector3(lPos.x, lPos.y, 0);       
         }
