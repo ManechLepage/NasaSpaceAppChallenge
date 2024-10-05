@@ -18,6 +18,6 @@ public class PlanetDataManager : MonoBehaviour
 
     void Update()
     {
-        roguePlanetTrajectory.SetInitialTime(time + Time.deltaTime);
+        //roguePlanetTrajectory.SetInitialTime(time + Time.deltaTime);
     }
 }
