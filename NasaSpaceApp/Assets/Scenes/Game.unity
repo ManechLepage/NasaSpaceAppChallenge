@@ -811,6 +811,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1056810589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056810591}
+  - component: {fileID: 1056810590}
+  m_Layer: 0
+  m_Name: RoguePlanet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1056810590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056810589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f7a6a8cf54dd8489a842437630b2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 1594215835}
+  initialPosition: {x: 0, y: 0}
+  initialTime: 0
+  initialVelocity: 0
+  initialAngle: 0
+  numPoints: 0
+  numSubSteps: 0
+  timeStep: 0
+--- !u!4 &1056810591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056810589}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 96.693375, y: 32.616997, z: -0.75939244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088637478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,3 +1531,5 @@ SceneRoots:
   - {fileID: 101232933}
   - {fileID: 816381967}
   - {fileID: 1287148352}
+  - {fileID: 1594215836}
+  - {fileID: 1056810591}
