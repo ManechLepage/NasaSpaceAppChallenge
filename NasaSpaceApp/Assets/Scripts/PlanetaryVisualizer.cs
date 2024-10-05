@@ -25,7 +25,6 @@ public class PlanetaryVisualizer : MonoBehaviour
                 max_radius = planet.semiMajor;
             }
         }
-        Debug.Log("Max radius: " + max_radius);
         return max_radius;
     }
 

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b26d829ab0a2f244a706b5aac0e28c1, type: 3}
   m_Name: System Ran
   m_EditorClassIdentifier: 
-  star: {fileID: 0}
-  planets: []
+  star: {fileID: 11400000, guid: 7f2e94919052a2f40907bd8b0de6bff0, type: 2}
+  planets:
+  - {fileID: 11400000, guid: 01711b57cb7523f41912c807c54c04b2, type: 2}

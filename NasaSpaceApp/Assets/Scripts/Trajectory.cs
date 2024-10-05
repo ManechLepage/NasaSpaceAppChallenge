@@ -27,8 +27,9 @@ public class Trajectory : MonoBehaviour
 
     public void InitializeTrajectory() {
         prevTrajectory = new List<Vector2>();
-        transform.localPosition = initialPosition;
+        position = initialPosition;
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
+        transform.localPosition = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(initialPosition.magnitude, Mathf.Atan2(initialPosition.y, initialPosition.x)));
     }
     
     public void SetInitialTime(float time) {
@@ -64,10 +65,13 @@ public class Trajectory : MonoBehaviour
                 float solarDistance = directionToSun.magnitude;
                 float solarAccelerationMag = Gadjusted * data.currentSystem.star.mass / (solarDistance * solarDistance);
                 acceleration += solarAccelerationMag * directionToSun.normalized;
+                Debug.Log(acceleration);
                 //calculate new position
                 position += velocity * timeStep / numSubSteps;
+                Debug.Log(position);
                 //calculate new velocity
                 velocity += acceleration * timeStep / numSubSteps;
+                Debug.Log(velocity);
             }
             //reconvert position to polar
             float radius = position.magnitude;
