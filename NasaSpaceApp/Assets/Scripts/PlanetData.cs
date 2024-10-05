@@ -5,12 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Planet", menuName = "Space/PlanetData", order = 2)]
 public class PlanetData : ScriptableObject
 {
-    public double semiMajor;
-    public double eccentricity;
-    public double mass;
+    public double semiMajor;  // in km
+    public double eccentricity;  // range 0-1
+    public double mass;  // in 1x10e24 kg
 
-    public double initialTime;
+    [Space]
+    public double initialTime;  // in s
 
-    public double time;
-    public double radius;
+    [Space]
+    public double time;  // in s
+    public double radius;  // in km
 }

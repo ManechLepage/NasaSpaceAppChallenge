@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b26d829ab0a2f244a706b5aac0e28c1, type: 3}
-  m_Name: Moche
+  m_Script: {fileID: 11500000, guid: c2c6d280078697a4da05d1b48ea874ec, type: 3}
+  m_Name: K2-3c
   m_EditorClassIdentifier: 
-  name: Moche
-  planets:
-  - {fileID: 11400000, guid: 371e415b33107d146866823c9224b22e, type: 2}
+  semiMajor: 20300000
+  eccentricity: 0.048
+  mass: 16.01
+  initialTime: 0
+  time: 0
+  radius: 0
