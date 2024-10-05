@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3005362281298000620, guid: 53e654a0607ba8d45a6f39d7ed41f4aa, type: 3}
   m_Color: {r: 0.2781061, g: 0.4516261, b: 0.6792453, a: 1}
   m_FlipX: 0
@@ -97,3 +97,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0af28c3c05e0f43bd1c0dadf5e104a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetData: {fileID: 0}
