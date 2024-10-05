@@ -6,12 +6,13 @@ public class PlanetaryVisualizer : MonoBehaviour
 {
     public PlanetarySystem planetarySystem;
 
-    double get_max_radius()
+    float get_max_radius()
     {
-        double max_radius = 0;
+
+        float max_radius = 0;
         foreach (PlanetData planet in planetarySystem.planets)
         {
-            if (planet.radius > max_radius)
+            if (planet.CalculatePosition(0).x > max_radius)
             {
                 max_radius = planet.radius;
             }

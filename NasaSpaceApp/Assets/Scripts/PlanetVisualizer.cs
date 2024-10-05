@@ -9,13 +9,13 @@ public class PlanetVisualizer : MonoBehaviour
 
     void Update()
     {
-        
+        transform.position = new Vector3((float)get_position().x, (float)get_position().y, transform.position.z);
     }
 
     double get_position()
     {
-        double radius_ratio = planetData.radius / transform.parent.GetComponent<PlanetaryVisualizer>().get_max_radius();
-        double radius = max_radius * radius_ratio;
+        float radius_ratio = planetData.radius / transform.parent.GetComponent<PlanetaryVisualizer>().get_max_radius();
+        float radius = max_radius * radius_ratio;
         return new Vector2(radius * Mathf.Cos(planetData.angle), radius * Mathf.Sin(planetData.angle));
     }
 
