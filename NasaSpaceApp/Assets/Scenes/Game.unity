@@ -1310,6 +1310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f7a6a8cf54dd8489a842437630b2ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetDataManager: {fileID: 0}
   data: {fileID: 1594215835}
   planetVisualiser: {fileID: 0}
   initialPosition: {x: 0, y: 0}
@@ -2299,9 +2300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetarySystems:
+  - {fileID: 11400000, guid: 6cc2ff482cc7d2b488df1eb3d41c7fe7, type: 2}
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
   - {fileID: 11400000, guid: e16d761125d1462439a95002f2ba9d7b, type: 2}
   currentSystem: {fileID: 0}
+  roguePlanetTrajectory: {fileID: 1056810590}
   time: 0
 --- !u!4 &1594215836
 Transform:

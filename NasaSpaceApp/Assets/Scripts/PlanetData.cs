@@ -10,12 +10,9 @@ public class PlanetData : ScriptableObject
     public float mass;  // in 10e24 kg
     public float period;  // in s
 
-    [Space]
-    public float initialTime;  // in s, time since perihelion
-
 
     public Vector2 CalculatePosition(float time) {
-        float realTime = initialTime + time;
+        float realTime = time;
         float meanAnomaly = 2 * Mathf.PI * realTime / period;
         //calculate eccentric anomaly
         float eccentricAnomaly = meanAnomaly;
