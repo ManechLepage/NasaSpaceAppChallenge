@@ -7,6 +7,7 @@ public class Trajectory : MonoBehaviour
     const float G = 6.67430e-11f;  // in m^3 kg^-1 s^-2
     const float Gadjusted = G * 10e18f * 10e-24f; // in 10e6 km^3 10e24 kg^-1 s^-2
     public PlanetDataManager data;
+    public List<Vector2> prevTrajectory;
     public GameObject planetVisualiser;
     public Vector2 initialPosition;
     public float initialTime;
@@ -23,6 +24,13 @@ public class Trajectory : MonoBehaviour
     void Start() {
         time = initialTime;
     }
+
+    public void InitializeTrajectory() {
+        prevTrajectory = new List<Vector2>();
+        position = initialPosition;
+        velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
+    }
+    
     void Update() {
         if (running) {
             for (int i = 0; i < numSubSteps; i++) {
@@ -51,7 +59,9 @@ public class Trajectory : MonoBehaviour
             //reconvert position to polar
             float radius = position.magnitude;
             float angle = Mathf.Atan2(position.y, position.x);
-            transform.localPosition = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(radius, angle));
+            lPos = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(radius, angle));
+            prevTrajectory.Add(lPos);
+            transform.localPosition = new Vector3(lPos.x, lPos.y, 0);       
         }
     }
 }
