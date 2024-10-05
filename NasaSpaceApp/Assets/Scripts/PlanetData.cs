@@ -21,14 +21,14 @@ public class PlanetData : ScriptableObject
         double eccentricAnomaly = meanAnomaly;
         double delta = 1;
         while (delta > 0.0001) {
-            double nextEccentricAnomaly = meanAnomaly + eccentricity * Mathf.Sin(eccentricAnomaly);
+            double nextEccentricAnomaly = meanAnomaly + eccentricity * (double)Mathf.Sin(eccentricAnomaly);
             delta = Mathf.Abs(nextEccentricAnomaly - eccentricAnomaly);
             eccentricAnomaly = nextEccentricAnomaly;
         }
         //calculate true anomaly
         double trueAnomaly = 2 * Mathf.Atan(Mathf.Sqrt((1 + eccentricity) / (1 - eccentricity)) * Mathf.Tan(eccentricAnomaly / 2));
         //calculate distance
-        double distance = semiMajor * (1 - eccentricity * Mathf.Cos(eccentricAnomaly));
-        return Vector2(distance, trueAnomaly);
+        double distance = semiMajor * (1 - eccentricity * (double)Mathf.Cos(eccentricAnomaly));
+        return new Vector2(distance, trueAnomaly);
     }
 }
