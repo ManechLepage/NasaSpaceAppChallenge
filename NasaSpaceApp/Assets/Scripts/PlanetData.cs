@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Planet", menuName = "Space/PlanetData", order = 2)]
+[CreateAssetMenu(fileName = "PlanetData", menuName = "Space/PlanetData", order = 2)]
 public class PlanetData : ScriptableObject
 {
     public double semiMajor;  // in km
