@@ -9,7 +9,7 @@ public class PlanetDataManager : MonoBehaviour
     
     void Start()
     {
-
+        currentSystem = planetarySystems[0];
     }
 
     void Update()
