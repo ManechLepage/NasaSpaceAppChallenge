@@ -21,9 +21,10 @@ public class PlanetaryVisualizer : MonoBehaviour
         {
             if (planet.semiMajor > max_radius)
             {
-                max_radius = planet.CalculatePosition(0).x;
+                max_radius = planet.semiMajor;
             }
         }
+        Debug.Log("Max radius: " + max_radius);
         return max_radius;
     }
 
@@ -46,6 +47,6 @@ public class PlanetaryVisualizer : MonoBehaviour
     {
         float radius_ratio = polarPosition.x / get_max_radius();
         float radius = max_radius * radius_ratio;
-        return new Vector2(radius * Mathf.Cos(polarPosition.y), radius * Mathf.Sin(polarPosition.y));
+        return new Vector2(radius * Mathf.Sin(polarPosition.y), radius * Mathf.Cos(polarPosition.y));
     }
 }

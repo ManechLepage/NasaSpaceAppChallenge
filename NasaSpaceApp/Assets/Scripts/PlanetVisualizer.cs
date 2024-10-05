@@ -9,6 +9,6 @@ public class PlanetVisualizer : MonoBehaviour
     void Update()
     {
         Vector2 position = transform.parent.GetComponent<PlanetaryVisualizer>().get_position_from_planet(planetData);
-        transform.position = new Vector3(position.x, position.y, transform.position.z);
+        transform.localPosition = new Vector3(position.x, position.y, transform.position.z);
     }
 }
