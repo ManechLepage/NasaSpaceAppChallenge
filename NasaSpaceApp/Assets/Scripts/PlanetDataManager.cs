@@ -6,6 +6,8 @@ public class PlanetDataManager : MonoBehaviour
 {
     public List<PlanetarySystem> planetarySystems = new List<PlanetarySystem>();
     public PlanetarySystem currentSystem;
+
+    public float time = 0;
     
     void Start()
     {
