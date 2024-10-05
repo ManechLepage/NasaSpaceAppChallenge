@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlanetaryVisualizer : MonoBehaviour
 {
-    public PlanetarySystem planetarySystem;
+    public GameObject planetsData;
     public GameObject planetPrefab;
     private float max_radius = 8.5f;
 
@@ -17,7 +17,7 @@ public class PlanetaryVisualizer : MonoBehaviour
     {
 
         float max_radius = 0;
-        foreach (PlanetData planet in planetarySystem.planets)
+        foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
         {
             if (planet.semiMajor > max_radius)
             {
@@ -30,7 +30,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public void InitializePlanets()
     {
-        foreach (PlanetData planet in planetarySystem.planets)
+        foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
         {
             GameObject newPlanet = Instantiate(planetPrefab, transform);
             newPlanet.GetComponent<PlanetVisualizer>().planetData = planet;
@@ -39,7 +39,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public Vector2 get_position_from_planet(PlanetData planetData)
     {
-        Vector2 polarPosition = planetData.CalculatePosition(0);
+        Vector2 polarPosition = planetData.CalculatePosition(planetsData.GetComponent<PlanetDataManager>().time * 500000 + -50000);
         return get_position_from_polar(polarPosition);
     }
 
