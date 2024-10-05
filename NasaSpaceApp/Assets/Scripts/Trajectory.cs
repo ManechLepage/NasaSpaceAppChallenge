@@ -24,11 +24,12 @@ public class Trajectory : MonoBehaviour
 
     void Start() {
         time = initialTime;
+        InitializeTrajectory();
     }
 
     public void InitializeTrajectory() {
         prevTrajectory = new List<Vector2>();
-        position = initialPosition;
+        transform.localPosition = initialPosition;
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
     }
     
