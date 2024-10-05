@@ -48,6 +48,10 @@ public class Trajectory : MonoBehaviour
                 //calculate new velocity
                 velocity += acceleration * timeStep / numSubSteps;
             }
+            //reconvert position to polar
+            float radius = position.magnitude;
+            float angle = Mathf.Atan2(position.y, position.x);
+            transform.localPosition = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(radius, angle));
         }
     }
 }
