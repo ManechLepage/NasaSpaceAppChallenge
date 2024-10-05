@@ -6,7 +6,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 {
     public PlanetarySystem planetarySystem;
 
-    float get_max_radius()
+    public float get_max_radius()
     {
 
         float max_radius = 0;
@@ -14,7 +14,7 @@ public class PlanetaryVisualizer : MonoBehaviour
         {
             if (planet.CalculatePosition(0).x > max_radius)
             {
-                max_radius = planet.radius;
+                max_radius = planet.CalculatePosition(0).x;
             }
         }
         return max_radius;
