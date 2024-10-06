@@ -12,8 +12,12 @@ public class PlanetDataManager : MonoBehaviour
     
     void Awake()
     {
-        currentSystem = planetarySystems[0];
-        time = roguePlanetTrajectory.initialTime;
+        currentSystem = planetarySystems[1];
+        time = roguePlanetTrajectory.time;
+        foreach (PlanetData planet in currentSystem.planets)
+        {
+            planet.initialPosition = Random.Range(-planet.period / 8, planet.period / 8);
+        }
     }
 
     void Update()

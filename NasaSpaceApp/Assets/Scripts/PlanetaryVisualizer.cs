@@ -69,6 +69,5 @@ public class PlanetaryVisualizer : MonoBehaviour
     public void LaunchPlanet()
     {
         roguePlanet.GetComponent<Trajectory>().StartSimulation();
-        angle.SetActive(false);
     }
 }

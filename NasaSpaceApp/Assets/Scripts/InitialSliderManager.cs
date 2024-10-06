@@ -22,17 +22,20 @@ public class InitialSliderManager : MonoBehaviour
         slider.onValueChanged.AddListener(OnSliderChange);
         
         if (isTime)
-            slider.value = trajectory.initialTime;
-        else if (isAngle)
-            slider.value = trajectory.initialAngle;
+            slider.value = trajectory.time;
+        else if (isAngle) {
+            slider.value = trajectory.initialAngle * Mathf.Rad2Deg - 90;
+        }
         else if (isVelocity)
             slider.value = trajectory.initialVelocity;
     }
 
     void OnSliderChange(float value)
     {
+        if (trajectory.running)
+            return;
         if (isTime)
-            trajectory.SetInitialTime(value);
+            trajectory.SetTime(value);
         else if (isAngle)
             trajectory.SetInitialAngle(value);
         else if (isVelocity)

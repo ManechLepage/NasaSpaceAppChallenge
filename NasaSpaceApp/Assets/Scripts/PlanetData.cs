@@ -9,10 +9,11 @@ public class PlanetData : ScriptableObject
     public float eccentricity;  // range 0-1
     public float mass;  // in 10e24 kg
     public float period;  // in s
+    public float initialPosition; // in s
     public Color color;
 
     public Vector2 CalculatePosition(float time) {
-        float realTime = time;
+        float realTime = time + initialPosition;
         float meanAnomaly = 2 * Mathf.PI * realTime / period;
         //calculate eccentric anomaly
         float eccentricAnomaly = meanAnomaly;
