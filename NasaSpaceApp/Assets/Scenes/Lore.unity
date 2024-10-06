@@ -1321,10 +1321,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01b259a7982c08439f72f01e8e9b139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TutorialTexts: []
+  tutorialTexts:
+  - "HAL: Landing on Calar 25\u2026 Successful "
+  - 'HAL: Wake up Dave. WAKE UP!'
+  - 'HAL: Hello Dave, we have crash landed on the rogue planet Calar 25,  a mysterious,
+    wandering world that drifts through the cosmos untethered by the gravitational
+    pull of any star. Without the warmth and light of a sun, these planets are cold,
+    dark, and isolated, relying on their inner energy to survive the cosmic abyss. '
+  - 'HAL: Our ship has now been rendered inoperable. Nevertheless, we may still continue
+    our mission of mapping and photographing the exoplanets in the designating star
+    systems: Epsilon Eridani, K2-3, TRAPPIST-1, Kepler-90, HD 20782 and HIP 78530.  '
+  - 'HAL: Upon arrival at each star system, you are to CLICK on the respective planets.
+    I will then execute an immediate analysis of the selected planet. Mission parameters
+    remain clear. Continue '
   level1Texts: []
   level2Texts: []
   level3Texts: []
+  label: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
