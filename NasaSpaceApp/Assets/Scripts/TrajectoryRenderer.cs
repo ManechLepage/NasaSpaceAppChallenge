@@ -5,16 +5,20 @@ using UnityEngine;
 public class TrajectoryRenderer : MonoBehaviour
 {   
     public GameObject trajectoryPrefab;
-    private List<GameObject> renderedTrajectory = new List<GameObject>();
+    private List<List<GameObject>> renderedTrajectory = new List<List<GameObject>>();
     // Update is called once per frame
+    public void newTrajectory()
+    {
+        renderedTrajectory.Add(new List<GameObject>());
+    }
     public void addTrajectoryPoint(Vector2 point)
     {
         GameObject newPoint = Instantiate(trajectoryPrefab, transform);
         newPoint.transform.localPosition = new Vector3((float)point.x, (float)point.y + 0.25f, 0);
         newPoint.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
-        renderedTrajectory.Add(newPoint); 
+        renderedTrajectory[renderedTrajectory.Count - 1].Add(newPoint); 
     }
-    public void deleteTrajectory()
+    public void fadeTrajectories()
     {
         for (int i = 0; i < renderedTrajectory.Count; i++)
         {
@@ -25,6 +29,5 @@ public class TrajectoryRenderer : MonoBehaviour
                 point.GetComponent<SpriteRenderer>().color = color;
             }
         }
-        renderedTrajectory.Clear();
     }
 }

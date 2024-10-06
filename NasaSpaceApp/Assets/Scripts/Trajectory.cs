@@ -73,7 +73,8 @@ public class Trajectory : MonoBehaviour
         maxAccel = 0;
         count = 0;
         running = true;
-        trajectoryRenderer.deleteTrajectory();
+        trajectoryRenderer.fadeTrajectories();
+        trajectoryRenderer.newTrajectory();
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
     }
 
