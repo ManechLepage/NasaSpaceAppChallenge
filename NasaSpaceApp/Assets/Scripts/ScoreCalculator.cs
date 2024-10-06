@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ScoreCalculator : MonoBehaviour
 {
-    public GameObject gameManager;
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Collision detected");
@@ -13,7 +12,7 @@ public class ScoreCalculator : MonoBehaviour
         {
             other.gameObject.GetComponent<Trajectory>().Reset();
             //other.gameObject.SetActive(false);
-            gameManager.GetComponent<GameManager>().score += CalculateScore(other.gameObject.transform.position.y);
+            GameManager.instance.score += CalculateScore(other.gameObject.transform.position.y);
         }
     }
 
