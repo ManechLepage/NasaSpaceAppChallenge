@@ -52,6 +52,6 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public void LaunchPlanet()
     {
-        roguePlanet.GetComponent<Trajectory>().running = true;
+        roguePlanet.GetComponent<Trajectory>().StartSimulation();
     }
 }
