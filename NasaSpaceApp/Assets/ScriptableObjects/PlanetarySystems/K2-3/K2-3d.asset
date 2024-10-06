@@ -16,4 +16,7 @@ MonoBehaviour:
   eccentricity: 0.091
   mass: 13.14
   period: 3853440
+  initialPosition: 0
+  radius: 9289
   color: {r: 0.8113208, g: 0.22134845, b: 0.15614095, a: 1}
+  type: 0

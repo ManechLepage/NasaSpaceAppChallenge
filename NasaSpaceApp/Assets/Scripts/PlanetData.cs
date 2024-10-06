@@ -15,6 +15,7 @@ public class PlanetData : ScriptableObject
     public float mass;  // in 10e24 kg
     public float period;  // in s
     public float initialPosition; // in s
+    public float radius;  // in km
     public Color color;
     public PlanetType type;
 
