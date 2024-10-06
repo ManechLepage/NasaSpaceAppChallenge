@@ -2,11 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlanetType {
-    Rocky,
-    Gaseous
-}
-
 [CreateAssetMenu(fileName = "PlanetData", menuName = "Space/PlanetData", order = 2)]
 public class PlanetData : ScriptableObject
 {
@@ -16,7 +11,6 @@ public class PlanetData : ScriptableObject
     public float period;  // in s
     public float initialPosition; // in s
     public Color color;
-    public PlanetType type;
 
     public Vector2 CalculatePosition(float time) {
         float realTime = time + initialPosition;
