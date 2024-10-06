@@ -16,7 +16,19 @@ public class LoreManager : MonoBehaviour
     void Start()
     {
         currentTexts = tutorialTexts;
-        label.GetComponent<TextMeshProUGUI>().text = currentTexts[0];
+
+        switch (GameManager.instance.level)
+        {
+            case 2:
+                currentTexts = level2Texts;
+                break;
+            case 3:
+                currentTexts = level3Texts;
+                break;
+        }
+        
+        if (currentTexts.Count != 0)
+            label.GetComponent<TextMeshProUGUI>().text = currentTexts[0];
 
         /*
         For the text 4:
@@ -26,6 +38,9 @@ public class LoreManager : MonoBehaviour
     }
     void Update()
     {
+        if (currentTexts.Count == 0)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             index++;
@@ -33,16 +48,26 @@ public class LoreManager : MonoBehaviour
             {
                 if (currentTexts == tutorialTexts)
                 {
-                    currentTexts = level1Texts;
+                    switch(GameManager.instance.level)
+                    {
+                        case 1:
+                            currentTexts = level1Texts;
+                            break;
+                        case 2:
+                            currentTexts = level2Texts;
+                            break;
+                        case 3:
+                            currentTexts = level3Texts;
+                            break;
+                    }
                     index = 0;
                 }
-
-                GameManager.instance.ChangeScene("Game");
+                else
+                {
+                    GameManager.instance.ChangeScene("Game");
+                }
             }
-            else
-            {
-                label.GetComponent<TextMeshProUGUI>().text = currentTexts[index];
-            }
+            label.GetComponent<TextMeshProUGUI>().text = currentTexts[index];
         }
     }
 }

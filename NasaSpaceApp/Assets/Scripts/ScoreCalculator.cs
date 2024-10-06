@@ -5,20 +5,25 @@ using UnityEngine;
 
 public class ScoreCalculator : MonoBehaviour
 {
+    public PlanetDataManager planetDataManager;
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Collision detected");
         if (other.gameObject.CompareTag("RoguePlanet"))
         {
-            other.gameObject.GetComponent<Trajectory>().Reset();
             //other.gameObject.SetActive(false);
-            GameManager.instance.score += CalculateScore(other.gameObject.transform.position.y);
+            planetDataManager.DidScore(CalculateScore(other.gameObject.transform.position.y));
+            other.gameObject.GetComponent<Trajectory>().Reset();
         }
     }
 
     int CalculateScore(float distance)
     {
         float distanceRatio = MathF.Abs(distance) / 5.0f;
+        int time = (int)planetDataManager.time;
+        Debug.Log($"Distance: {distance}, Distance Ratio: {distanceRatio}, Time: {time}");
+
         return Mathf.Abs((int)(1000 * (1 - distanceRatio)));
     }
 }

@@ -6,8 +6,10 @@ using TMPro;
 
 public class ScoreUpdater : MonoBehaviour
 {
+    public PlanetDataManager planetDataManager;
+
     void Update()
     {
-        GetComponent<TextMeshProUGUI>().text = "Score: " + GameManager.instance.score;
+        GetComponent<TextMeshProUGUI>().text = "Score: " + planetDataManager.attemptScore;
     }
 }

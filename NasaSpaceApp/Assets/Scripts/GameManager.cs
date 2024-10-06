@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public int score;
     public List<PlanetarySystem> planetarySystems = new List<PlanetarySystem>();
+    public int level = 1;
     public PlanetarySystem currentSystem;
 
     public static GameManager instance;
@@ -31,20 +32,15 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         currentSystem = planetarySystems[0];
+        level = 1;
     }
 
     public void ChangeScene(string sceneName)
     {
-        if (sceneName == "Mission")
+        if (sceneName == "Lore" && level <= planetarySystems.Count)
         {
-            int index = planetarySystems.IndexOf(currentSystem);
-            if (index == planetarySystems.Count - 1)
-            {
-                index = -1;
-            }
-            currentSystem = planetarySystems[index + 1];
+            currentSystem = planetarySystems[level - 1];
         }
-        
         SceneManager.LoadScene(sceneName);
     }
 }

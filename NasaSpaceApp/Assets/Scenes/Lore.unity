@@ -717,7 +717,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 10.400002}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 212, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760272715
 MonoBehaviour:
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pres Space to continue...
+  m_text: Press Space to continue...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
   m_sharedMaterial: {fileID: 4249066472039540760, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
@@ -1209,6 +1209,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e16d761125d1462439a95002f2ba9d7b, type: 2}
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
   - {fileID: 11400000, guid: 6cc2ff482cc7d2b488df1eb3d41c7fe7, type: 2}
+  level: 1
   currentSystem: {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
 --- !u!1 &1493687227
 GameObject:
@@ -1524,13 +1525,13 @@ MonoBehaviour:
   - 2
   - 3
   level2Texts:
-  - 1
-  - 2
-  - 3
+  - 4
+  - 5
+  - 6
   level3Texts:
-  - 1
-  - 2
-  - 3
+  - 7
+  - 8
+  - 9
   label: {fileID: 851823177}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
