@@ -29,8 +29,14 @@ public class Trajectory : MonoBehaviour
     public void Reset() {
         running = false;
         time = initialTime;
-        position = initialPosition;
-        transform.localPosition = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(initialPosition.magnitude, Mathf.Atan2(initialPosition.y, initialPosition.x)));
+        transform.localPosition = new Vector3(initialPosition.x, initialPosition.y, 0);
+        //convert from screen reference frame to scaled radius polar
+        float radius = new Vector2(initialPosition.x, initialPosition.y).magnitude;
+        float angle = Mathf.Atan2(initialPosition.y, initialPosition.x);
+        float descaled_radius = radius / planetVisualiser.GetComponent<PlanetaryVisualizer>().max_radius * planetVisualiser.GetComponent<PlanetaryVisualizer>().get_max_radius();
+        position = new Vector2(descaled_radius * Mathf.Sin(angle), descaled_radius * Mathf.Cos(angle));
+        Debug.Log("Initial position: " + position);
+        Debug.Log("Screen transformed initial position: " + initialPosition);
     }
     
     public void SetInitialTime(float time) {
@@ -43,13 +49,11 @@ public class Trajectory : MonoBehaviour
     }
 
     public void SetInitialAngle(float angle) {
-        initialAngle = angle;
+        initialAngle = angle / 180 * Mathf.PI;
     }
 
     void StartSimulation() {
         running = true;
-        time = initialTime;
-        Debug.Log("Starting simulation");
         prevTrajectory.Clear();
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
     }
@@ -59,11 +63,11 @@ public class Trajectory : MonoBehaviour
             if (!prev) StartSimulation();
             for (int i = 0; i < numSubSteps; i++) {
                 time += timeStep / numSubSteps;
-                //SetInitialTime(time / 500000f + 0.1f);
+                SetInitialTime((initialTime + timeStep / numSubSteps));
                 Vector2 acceleration = new Vector2(0, 0);
                 //calculate positions of planets
                 foreach (PlanetData planet in data.currentSystem.planets) {
-                    Vector2 polar = planet.CalculatePosition(time);
+                    Vector2 polar = planet.CalculatePosition(initialTime);
                     Vector2 planetPosition = new Vector2(polar.x * Mathf.Cos(polar.y), polar.x * Mathf.Sin(polar.y));
                     //calculate acceleration from planet on planet
                     Vector2 direction = planetPosition - position;
@@ -77,6 +81,7 @@ public class Trajectory : MonoBehaviour
                 float solarAccelerationMag = Gadjusted * data.currentSystem.star.mass / (solarDistance * solarDistance);
                 acceleration += solarAccelerationMag * directionToSun.normalized / 10e6f;
                 //calculate new position
+                Debug.Log("Velocity: " + velocity.magnitude);
                 position += velocity * timeStep / numSubSteps;
                 //calculate new velocity
                 velocity += acceleration * timeStep / numSubSteps;

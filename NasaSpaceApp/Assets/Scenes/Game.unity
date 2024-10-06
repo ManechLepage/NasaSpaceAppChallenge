@@ -517,8 +517,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 2135681310}
   m_HandleRect: {fileID: 121502905}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -50000
+  m_MaxValue: 450000
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1024,6 +1024,7 @@ Transform:
   - {fileID: 1287148352}
   - {fileID: 988573060}
   - {fileID: 206221460}
+  - {fileID: 1056810591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &665421856
@@ -1346,13 +1347,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 1594215835}
   prevTrajectory: []
-  planetVisualiser: {fileID: 0}
-  initialPosition: {x: 0, y: 0}
+  planetVisualiser: {fileID: 1287148351}
+  initialPosition: {x: -10.5, y: 4.5}
   initialTime: 0
   initialVelocity: 0
   initialAngle: 0
-  timeStep: 0
-  numSubSteps: 0
+  timeStep: 10
+  numSubSteps: 1
   running: 0
 --- !u!4 &1056810591
 Transform:
@@ -1362,13 +1363,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056810589}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.02, y: -0.47, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.5, y: 4.5, z: 0.061853}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1407514343}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 663346602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088637478
 GameObject:
@@ -1557,7 +1558,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2108311548}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 0.01
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1720,6 +1721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetsData: {fileID: 1594215834}
   planetPrefab: {fileID: 5237359436996278333, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
+  max_radius: 8.5
 --- !u!1 &1290932792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3449,7 +3451,6 @@ SceneRoots:
   - {fileID: 1594215836}
   - {fileID: 132954268}
   - {fileID: 816381967}
-  - {fileID: 1056810591}
   - {fileID: 1941592698}
   - {fileID: 2142554743}
   - {fileID: 663346602}

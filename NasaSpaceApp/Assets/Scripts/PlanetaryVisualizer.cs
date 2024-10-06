@@ -6,7 +6,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 {
     public GameObject planetsData;
     public GameObject planetPrefab;
-    private float max_radius = 8.5f;
+    public float max_radius = 8.5f;
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public Vector2 get_position_from_planet(PlanetData planetData)
     {
-        Vector2 polarPosition = planetData.CalculatePosition(planetsData.GetComponent<PlanetDataManager>().time * 500000 + -50000);
+        Vector2 polarPosition = planetData.CalculatePosition(planetsData.GetComponent<PlanetDataManager>().time);
         return get_position_from_polar(polarPosition);
     }
 
