@@ -2470,6 +2470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetData: {fileID: 0}
+  planetsParent: {fileID: 1287148351}
   planetInfoPanel: {fileID: 790486547}
   planetName: {fileID: 474172659}
   preview: {fileID: 1451946886}
@@ -3059,7 +3060,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 1594215835}
-  prevTrajectory: []
   planetVisualiser: {fileID: 1287148351}
   trajectoryRenderer: {fileID: 1605545959}
   initialPosition: {x: -10.5, y: 4.5}
