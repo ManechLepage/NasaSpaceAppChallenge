@@ -73,13 +73,16 @@ public class ExoplanetInfoManager : MonoBehaviour
         this.planetData = planetData;
         planetName.text = planetData.name;
         planetType.text = planetData.type.ToString();
-        planetMass.text = planetData.mass.ToString() + " x Earth";
-        planetDistance.text = planetData.semiMajor.ToString() + " AU";
-        planetPeriod.text = (Mathf.Round(planetData.period / 31557600f * 1000f) / 1000f).ToString() + " Years";
 
-        //preview.sprite = planetData.planetSprite;
-        //float gravity = 6.67f * 10f**-11f * planetData.mass / (planetData.semiMajor * 1.496f**8f)**2f;
-        //planetGravity.text = 6.67f*10f**-11f *  + " m/s²";
+        float m = Mathf.Round(planetData.mass / 5.9722f * 100f) / 100f;
+        planetMass.text = $"{m.ToString()} x Earth".Replace(",", ".");
+        planetDistance.text = $"{Mathf.Round(planetData.semiMajor * 100f) / 100f} AU".Replace(",", ".");
+        planetPeriod.text = $"{(Mathf.Round(planetData.period / 31557600f * 1000f) / 1000f).ToString()} Years".Replace(",", ".");
+        preview.GetComponent<Image>().color = planetData.color;
+
+        //we know the planet mass and radius
+        float gravity = 6.67430e-11f * (planetData.mass * 10e23f) / Mathf.Pow(planetData.radius * 1000f, 2f);
+        planetGravity.text = $"{Mathf.Round(gravity * 100f) / 100f} m/s²".Replace(",", ".");
 
         Vector2 screenToWorld = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
         Rect panelRect = planetInfoPanel.GetComponent<RectTransform>().rect;

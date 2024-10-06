@@ -17,6 +17,12 @@ public class LoreManager : MonoBehaviour
     {
         currentTexts = tutorialTexts;
         label.GetComponent<TextMeshProUGUI>().text = currentTexts[0];
+
+        /*
+        For the text 4:
+        HAL: Our ship has now been rendered inoperable. Nevertheless, we may still continue our mission of mapping and photographing the exoplanets in the designating star systems: Epsilon Eridani, K2-3, TRAPPIST-1, Kepler-90, HD 20782 and HIP 78530. 
+        (removed TRAPPIST-1, HD 20782 and HIP 78530)
+        */
     }
     void Update()
     {
@@ -31,7 +37,7 @@ public class LoreManager : MonoBehaviour
                     index = 0;
                 }
 
-                GameManager.instance.ChangeScene("Mission");
+                GameManager.instance.ChangeScene("Game");
             }
             else
             {
