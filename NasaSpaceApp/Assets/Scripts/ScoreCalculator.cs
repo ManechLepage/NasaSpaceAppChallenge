@@ -8,6 +8,7 @@ public class ScoreCalculator : MonoBehaviour
     public GameObject gameManager;
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Collision detected");
         if (other.gameObject.CompareTag("RoguePlanet"))
         {
             other.gameObject.GetComponent<Trajectory>().running = false;
@@ -19,6 +20,6 @@ public class ScoreCalculator : MonoBehaviour
     int CalculateScore(float distance)
     {
         float distanceRatio = MathF.Abs(distance) / 5.0f;
-        return (int)(-1000 * (1 - distanceRatio));
+        return (int)(1000 * (1 - distanceRatio));
     }
 }
