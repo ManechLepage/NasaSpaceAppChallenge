@@ -844,10 +844,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1794622061}
   m_HandleRect: {fileID: 1652300380}
   m_Direction: 0
-  m_MinValue: -3.1
+  m_MinValue: -180
   m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: -1.55
+  m_Value: -90
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1223,6 +1223,7 @@ GameObject:
   - component: {fileID: 816381967}
   - component: {fileID: 816381966}
   - component: {fileID: 816381968}
+  - component: {fileID: 816381969}
   m_Layer: 0
   m_Name: banner
   m_TagString: Untagged
@@ -1342,6 +1343,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 8}
   m_EdgeRadius: 0
+--- !u!114 &816381969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816381965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f9feda9caac86408e765451a92158a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1493394742}
 --- !u!1 &840026978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,7 +1567,7 @@ Transform:
   m_Children:
   - {fileID: 1407514343}
   - {fileID: 1319182437}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 663346602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088637478
 GameObject:
@@ -1744,7 +1758,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 0.01
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.01
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1906,6 +1920,7 @@ MonoBehaviour:
   planetsData: {fileID: 1594215834}
   planetPrefab: {fileID: 5237359436996278333, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
   max_radius: 8.5
+  roguePlanet: {fileID: 1056810589}
 --- !u!1 &1290932792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,7 +2055,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290932792}
   m_CullTransparentMesh: 1
-  roguePlanet: {fileID: 1056810589}
 --- !u!1 &1313747033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,7 +2684,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1432210895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1287148353}
+        m_TargetAssemblyTypeName: PlanetaryVisualizer, Assembly-CSharp
+        m_MethodName: LaunchPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1432210895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3615,6 +3641,7 @@ RectTransform:
   - {fileID: 345237538}
   - {fileID: 441007914}
   - {fileID: 1155816442}
+  - {fileID: 1290932793}
   m_Father: {fileID: 1941592698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}

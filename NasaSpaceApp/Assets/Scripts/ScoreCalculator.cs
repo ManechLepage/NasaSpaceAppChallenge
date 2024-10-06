@@ -10,14 +10,14 @@ public class ScoreCalculator : MonoBehaviour
     {
         if (other.gameObject.CompareTag("RoguePlanet"))
         {
-            
+            other.gameObject.GetComponent<Trajectory>().running = false;
+            gameManager.GetComponent<GameManager>().score += CalculateScore(other.gameObject.transform.position.y);
         }
     }
 
-    void CalculateScore(float distance)
+    int CalculateScore(float distance)
     {
         float distanceRatio = MathF.Abs(distance) / 5.0f;
-        
-
+        return (int)(-1000 * (1 - distanceRatio));
     }
 }

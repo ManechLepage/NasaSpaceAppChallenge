@@ -50,7 +50,7 @@ public class Trajectory : MonoBehaviour
 
     public void SetInitialAngle(float angle) {
         initialAngle = angle * Mathf.Deg2Rad;
-        angleArrow.transform.localRotation = Quaternion.Euler(0, 0, initialAngle);
+        angleArrow.transform.localRotation = Quaternion.Euler(0, 0, angle);
     }
 
     public void StartSimulation() {
