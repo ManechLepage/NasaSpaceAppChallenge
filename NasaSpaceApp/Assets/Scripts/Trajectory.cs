@@ -46,6 +46,7 @@ public class Trajectory : MonoBehaviour
 
     public void SetInitialVelocity(float velocity) {
         initialVelocity = velocity;
+        angleArrow.transform.localScale = new Vector3( 1, velocity * 400, 1);
     }
 
     public void SetInitialAngle(float angle) {
