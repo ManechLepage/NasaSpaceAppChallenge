@@ -19,7 +19,7 @@ public class Trajectory : MonoBehaviour
     private float time;
     private Vector2 position;
     private Vector2 velocity;
-
+    public float maxAccel;
 
     void Start() {
         prevTrajectory = new List<Vector2>();
@@ -49,11 +49,12 @@ public class Trajectory : MonoBehaviour
     }
 
     public void SetInitialAngle(float angle) {
-        initialAngle = angle * Mathf.Deg2Rad;
+        initialAngle = -angle * Mathf.Deg2Rad;
         angleArrow.transform.localRotation = Quaternion.Euler(0, 0, angle);
     }
 
     public void StartSimulation() {
+        maxAccel = 0;
         running = true;
         prevTrajectory.Clear();
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
@@ -72,16 +73,19 @@ public class Trajectory : MonoBehaviour
                     //calculate acceleration from planet on planet
                     Vector2 direction = planetPosition - position;
                     float distance = direction.magnitude;
-                    float accelerationMag = Gadjusted * planet.mass / (distance * distance);
+                    float accelerationMag = System.Math.Max(1e-5f, Gadjusted * planet.mass / (distance * distance));
+                    if (accelerationMag > maxAccel) {
+                        maxAccel = accelerationMag;
+                    }
                     acceleration += accelerationMag * direction.normalized;
                 }
+                acceleration *= 0.6f;
                 //calculate acceleration from sun on planet
                 Vector2 directionToSun = -position;
                 float solarDistance = directionToSun.magnitude;
                 float solarAccelerationMag = Gadjusted * data.currentSystem.star.mass / (solarDistance * solarDistance);
                 acceleration += solarAccelerationMag * directionToSun.normalized / 10e6f;
                 //calculate new position
-                Debug.Log("Velocity: " + velocity.magnitude);
                 position += velocity * timeStep / numSubSteps;
                 //calculate new velocity
                 velocity += acceleration * timeStep / numSubSteps;
