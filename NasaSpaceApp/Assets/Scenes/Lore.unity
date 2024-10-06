@@ -1469,9 +1469,18 @@ MonoBehaviour:
   - 'HAL: Upon arrival at each star system, you are to CLICK on the respective planets.
     I will then execute an immediate analysis of the selected planet. Mission parameters
     remain clear. Continue '
-  level1Texts: []
-  level2Texts: []
-  level3Texts: []
+  level1Texts:
+  - 1
+  - 2
+  - 3
+  level2Texts:
+  - 1
+  - 2
+  - 3
+  level3Texts:
+  - 1
+  - 2
+  - 3
   label: {fileID: 851823177}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
