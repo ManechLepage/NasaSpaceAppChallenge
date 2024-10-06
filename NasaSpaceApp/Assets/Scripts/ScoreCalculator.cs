@@ -20,6 +20,6 @@ public class ScoreCalculator : MonoBehaviour
     int CalculateScore(float distance)
     {
         float distanceRatio = MathF.Abs(distance) / 5.0f;
-        return (int)(1000 * (1 - distanceRatio));
+        return Mathf.Abs((int)(1000 * (1 - distanceRatio)));
     }
 }
