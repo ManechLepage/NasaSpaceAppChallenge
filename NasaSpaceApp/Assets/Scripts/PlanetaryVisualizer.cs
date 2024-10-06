@@ -18,7 +18,7 @@ public class PlanetaryVisualizer : MonoBehaviour
     {
 
         float max_radius = 0;
-        foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
+        foreach (PlanetData planet in GameManager.instance.currentSystem.planets)
         {
             if (planet.semiMajor > max_radius)
             {
@@ -32,7 +32,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public float get_max_mass() {
         float max_mass = 0;
-        foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
+        foreach (PlanetData planet in GameManager.instance.currentSystem.planets)
         {
             if (planet.mass > max_mass)
             {
@@ -44,7 +44,7 @@ public class PlanetaryVisualizer : MonoBehaviour
 
     public void InitializePlanets()
     {
-        foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
+        foreach (PlanetData planet in GameManager.instance.currentSystem.planets)
         {
             GameObject newPlanet = Instantiate(planetPrefab, transform);
             newPlanet.GetComponent<PlanetVisualizer>().planetData = planet;

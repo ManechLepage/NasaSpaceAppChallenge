@@ -30,6 +30,8 @@ public class LoreManager : MonoBehaviour
                     currentTexts = level1Texts;
                     index = 0;
                 }
+
+                GameManager.instance.ChangeScene("Game");
             }
             else
             {

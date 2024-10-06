@@ -87,7 +87,7 @@ public class Trajectory : MonoBehaviour
             SetTime((time + timeStep * 5 / numSubSteps));
             Vector2 acceleration = new Vector2(0, 0);
             //calculate positions of planets
-            foreach (PlanetData planet in data.currentSystem.planets) {
+            foreach (PlanetData planet in GameManager.instance.currentSystem.planets) {
                 Vector2 polar = planet.CalculatePosition(time);
                 Vector2 planetPosition = new Vector2(polar.x * Mathf.Cos(polar.y), polar.x * Mathf.Sin(polar.y));
                 //calculate acceleration from planet on planet
@@ -103,7 +103,7 @@ public class Trajectory : MonoBehaviour
             //calculate acceleration from sun on planet
             Vector2 directionToSun = -position;
             float solarDistance = directionToSun.magnitude;
-            float solarAccelerationMag = Gadjusted * data.currentSystem.star.mass / (solarDistance * solarDistance);
+            float solarAccelerationMag = Gadjusted * GameManager.instance.currentSystem.star.mass / (solarDistance * solarDistance);
             acceleration += solarAccelerationMag * directionToSun.normalized / 10e8f;
             //calculate new position
             position += velocity * timeStep / numSubSteps;
