@@ -16,4 +16,4 @@ MonoBehaviour:
   eccentricity: 0.048
   mass: 16.01
   period: 2125440
-  color: {r: 0.9056604, g: 0.44770378, b: 0.44770378, a: 0}
+  color: {r: 0.9056604, g: 0.44770378, b: 0.44770378, a: 1}
