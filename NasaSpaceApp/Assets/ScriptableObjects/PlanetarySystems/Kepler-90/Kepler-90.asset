@@ -15,4 +15,4 @@ MonoBehaviour:
   type: 3
   distance: 2.6177841e+10
   mass: 2387000
-  color: {r: 1, g: 0.8983947, b: 0, a: 0}
+  color: {r: 1, g: 0.8983947, b: 0, a: 1}

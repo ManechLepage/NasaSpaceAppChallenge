@@ -35,6 +35,7 @@ public class PlanetaryVisualizer : MonoBehaviour
         {
             GameObject newPlanet = Instantiate(planetPrefab, transform);
             newPlanet.GetComponent<PlanetVisualizer>().planetData = planet;
+            newPlanet.GetComponent<SpriteRenderer>().color = planet.color;
         }
     }
 
