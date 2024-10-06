@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "??? m/s\xB2"
+  m_text: "10.489 m/s\xB2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
   m_sharedMaterial: {fileID: 4249066472039540760, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
@@ -3426,7 +3426,6 @@ MonoBehaviour:
   planetsData: {fileID: 1594215834}
   planetPrefab: {fileID: 5237359436996278333, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
   max_radius: 8.5
-  roguePlanet: {fileID: 1056810589}
   angle: {fileID: 1319182436}
 --- !u!1 &1313747033
 GameObject:
@@ -4158,7 +4157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.90588236, g: 0.44705883, b: 0.44705883, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
