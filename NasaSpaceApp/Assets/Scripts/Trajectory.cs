@@ -73,8 +73,7 @@ public class Trajectory : MonoBehaviour
         maxAccel = 0;
         count = 0;
         running = true;
-        trajectoryRenderer.fadeTrajectories();
-        trajectoryRenderer.newLaunch();
+        trajectoryRenderer.deleteTrajectory();
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
     }
 
@@ -104,7 +103,7 @@ public class Trajectory : MonoBehaviour
             Vector2 directionToSun = -position;
             float solarDistance = directionToSun.magnitude;
             float solarAccelerationMag = Gadjusted * data.currentSystem.star.mass / (solarDistance * solarDistance);
-            acceleration += solarAccelerationMag * directionToSun.normalized / 10e6f;
+            acceleration += solarAccelerationMag * directionToSun.normalized / 10e8f;
             //calculate new position
             position += velocity * timeStep / numSubSteps;
             //calculate new velocity
