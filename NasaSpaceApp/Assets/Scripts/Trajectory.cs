@@ -6,8 +6,8 @@ public class Trajectory : MonoBehaviour
     const float G = 6.67430e-11f;  // in m^3 kg^-1 s^-2
     const float Gadjusted = G * 10e27f * 10e-24f; // in 10e6 km^3 10e24 kg^-1 s^-2
     public PlanetDataManager data;
-    public List<Vector2> prevTrajectory;
     public GameObject planetVisualiser;
+    public TrajectoryRenderer trajectoryRenderer;
     public Vector2 initialPosition;
     public GameObject angleArrow;
     public float time;
@@ -15,6 +15,8 @@ public class Trajectory : MonoBehaviour
     public float initialAngle;
     public float timeStep;
     public int numSubSteps;
+    private const int trajectoryPointInterval = 20;
+    private int count;
     public bool running;
     private float initialTime;
     private Vector2 position;
@@ -22,7 +24,6 @@ public class Trajectory : MonoBehaviour
     public float maxAccel;
 
     void Start() {
-        prevTrajectory = new List<Vector2>();
         initialTime = 0;
         initialAngle = Mathf.PI / 2;
         initialVelocity = 0.005f;
@@ -40,6 +41,7 @@ public class Trajectory : MonoBehaviour
         position = new Vector2(descaled_radius * Mathf.Sin(angle), descaled_radius * Mathf.Cos(angle));
         SetInitialAngle(-initialAngle * Mathf.Rad2Deg);
         SetInitialVelocity(initialVelocity);
+        count = 0;
     }
     
     public void SetTime(float newTime) {
@@ -69,8 +71,9 @@ public class Trajectory : MonoBehaviour
         }
         initialTime = time;
         maxAccel = 0;
+        count = 0;
         running = true;
-        prevTrajectory.Clear();
+        trajectoryRenderer.deleteTrajectory();
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
     }
 
@@ -78,6 +81,7 @@ public class Trajectory : MonoBehaviour
         if (!running) {
             return;
         }
+        count++;
         for (int i = 0; i < numSubSteps; i++) {
             SetTime((time + timeStep * 5 / numSubSteps));
             Vector2 acceleration = new Vector2(0, 0);
@@ -111,7 +115,10 @@ public class Trajectory : MonoBehaviour
         float radius = position.magnitude;
         float angle = Mathf.Atan2(position.y, position.x);
         Vector2 lPos = planetVisualiser.GetComponent<PlanetaryVisualizer>().get_position_from_polar(new Vector2(radius, angle));
-        prevTrajectory.Add(lPos);
+        if (count == trajectoryPointInterval) {
+            trajectoryRenderer.addTrajectoryPoint(lPos);
+            count = 0;
+        }
         transform.localPosition = new Vector3(lPos.x, lPos.y, 0);       
     }
 }
