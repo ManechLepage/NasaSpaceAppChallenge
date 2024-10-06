@@ -19,7 +19,6 @@ public class Trajectory : MonoBehaviour
     private float time;
     private Vector2 position;
     private Vector2 velocity;
-    private bool prev;
 
 
     void Start() {
@@ -54,7 +53,7 @@ public class Trajectory : MonoBehaviour
         angleArrow.transform.localRotation = Quaternion.Euler(0, 0, initialAngle);
     }
 
-    void StartSimulation() {
+    public void StartSimulation() {
         running = true;
         prevTrajectory.Clear();
         velocity = new Vector2(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle));
@@ -62,7 +61,6 @@ public class Trajectory : MonoBehaviour
 
     void Update() {
         if (running) {
-            if (!prev) StartSimulation();
             for (int i = 0; i < numSubSteps; i++) {
                 time += timeStep / numSubSteps;
                 SetInitialTime((initialTime + timeStep / numSubSteps));
@@ -95,6 +93,5 @@ public class Trajectory : MonoBehaviour
             prevTrajectory.Add(lPos);
             transform.localPosition = new Vector3(lPos.x, lPos.y, 0);       
         }
-        prev = running;
     }
 }
