@@ -786,7 +786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &163538415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -803,7 +803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -6.7, y: -75.3}
+  m_AnchoredPosition: {x: -6.7, y: 0}
   m_SizeDelta: {x: 7.7595, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163538416
@@ -2404,6 +2404,7 @@ MonoBehaviour:
   planetGravity: {fileID: 39815304}
   planetDistance: {fileID: 1880900845}
   planetPeriod: {fileID: 76580398}
+  triangle: {fileID: 163538414}
 --- !u!4 &780803753
 Transform:
   m_ObjectHideFlags: 0
@@ -2717,7 +2718,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -24.086948, y: -33.84067}
+  m_AnchoredPosition: {x: -24.086975, y: -33.840668}
   m_SizeDelta: {x: 235.82172, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860235138
