@@ -20,9 +20,11 @@ public class ContourVisualiser : MonoBehaviour
     void Start()
     {   
         float maxDistance = radiusFromForce(gameObject.GetComponentInParent<PlanetaryVisualizer>().get_max_mass(), initialForce - (numContours - 1) * step);
+        Debug.Log("Max distance: " + maxDistance);
         for (int i = 0; i < numContours; i++) {
             int force = initialForce - i * step;
             float distance = radiusFromForce(gameObject.GetComponent<PlanetVisualizer>().planetData.mass, force);
+            Debug.Log("Distance: " + distance);
             float scaled_distance = distance / maxDistance * desired_max_contour;
             GameObject contour = Instantiate(contourPrefab, transform);
             contour.GetComponent<DrawRing>().radius = scaled_distance;

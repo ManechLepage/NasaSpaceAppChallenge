@@ -65,4 +65,9 @@ public class PlanetaryVisualizer : MonoBehaviour
         float radius = max_radius * radius_ratio;
         return new Vector2(radius * Mathf.Sin(polarPosition.y), radius * Mathf.Cos(polarPosition.y));
     }
+
+    public void LaunchPlanet()
+    {
+        roguePlanet.GetComponent<Trajectory>().StartSimulation();
+    }
 }
