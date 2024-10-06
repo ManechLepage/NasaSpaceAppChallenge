@@ -12,7 +12,7 @@ public class PlanetDataManager : MonoBehaviour
     
     void Awake()
     {
-        currentSystem = planetarySystems[1];
+        currentSystem = planetarySystems[0];
         time = roguePlanetTrajectory.initialTime;
     }
 

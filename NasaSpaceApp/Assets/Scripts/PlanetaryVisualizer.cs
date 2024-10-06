@@ -29,6 +29,20 @@ public class PlanetaryVisualizer : MonoBehaviour
         return max_radius;
     }
 
+    
+
+    public float get_max_mass() {
+        float max_mass = 0;
+        foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)
+        {
+            if (planet.mass > max_mass)
+            {
+                max_mass = planet.mass;
+            }
+        }
+        return max_mass;
+    }
+
     public void InitializePlanets()
     {
         foreach (PlanetData planet in planetsData.GetComponent<PlanetDataManager>().currentSystem.planets)

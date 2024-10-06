@@ -8,19 +8,27 @@ public class ContourVisualiser : MonoBehaviour
     public int numContours;
     public int initialForce;
     public int step;
+    const float desired_max_contour = 6f;
     const float G = 6.67430e-11f;  // in m^3 kg^-1 s^-2
     const float Gadjusted = G * 10e27f * 10e-24f; // in 10e6 km^3 10e24 kg^-1 s^-2
+    float radiusFromForce(float mass, float force) {
+        //Fg  = G * m1 * m2 / r^2
+        //r = sqrt(G * m1 * m2 / Fg)
+        return Mathf.Sqrt(Gadjusted * mass / force);
+    }
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        float maxDistance = radiusFromForce(gameObject.GetComponentInParent<PlanetaryVisualizer>().get_max_mass(), initialForce - (numContours - 1) * step);
+        Debug.Log("Max distance: " + maxDistance);
         for (int i = 0; i < numContours; i++) {
-            int force = initialForce + i * step;
-            //Fg  = G * m1 * m2 / r^2
-            //r = sqrt(G * m1 * m2 / Fg)
-            float distance = Mathf.Sqrt(Gadjusted * gameObject.GetComponent<PlanetVisualizer>().planetData.mass * force);
+            int force = initialForce - i * step;
+            float distance = radiusFromForce(gameObject.GetComponent<PlanetVisualizer>().planetData.mass, force);
+            Debug.Log("Distance: " + distance);
+            float scaled_distance = distance / maxDistance * desired_max_contour;
             GameObject contour = Instantiate(contourPrefab, transform);
-            contour.transform.localScale = new Vector3(distance, distance, 1);
-            contour.transform.localPosition = new Vector3(0, -distance / 4 + gameObject.transform.localScale.y / 2, 0);
+            contour.GetComponent<DrawRing>().radius = scaled_distance;
+            contour.transform.localPosition = new Vector3(0, 1 + transform.localScale.y / 2, 0);
         }
     }
 

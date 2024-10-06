@@ -113,5 +113,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contourPrefab: {fileID: 268334307390932011, guid: 607140f25929ed1448af27aa338aec1c, type: 3}
   numContours: 4
-  initialForce: 300000
-  step: 500000
+  initialForce: 50
+  step: 12
