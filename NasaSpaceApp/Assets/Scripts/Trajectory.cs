@@ -9,6 +9,7 @@ public class Trajectory : MonoBehaviour
     public List<Vector2> prevTrajectory;
     public GameObject planetVisualiser;
     public Vector2 initialPosition;
+    public GameObject angleArrow;
     public float initialTime;
     public float initialVelocity;
     public float initialAngle;
@@ -44,6 +45,7 @@ public class Trajectory : MonoBehaviour
 
     public void SetInitialAngle(float angle) {
         initialAngle = angle;
+        angleArrow.transform.localRotation = Quaternion.Euler(0, 0, angle * Mathf.Rad2Deg);
     }
 
     void StartSimulation() {
