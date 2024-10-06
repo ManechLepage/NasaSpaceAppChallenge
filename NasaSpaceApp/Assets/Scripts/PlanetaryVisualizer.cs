@@ -7,7 +7,6 @@ public class PlanetaryVisualizer : MonoBehaviour
     public GameObject planetsData;
     public GameObject planetPrefab;
     public float max_radius = 8.5f;
-    public GameObject roguePlanet;
     public GameObject angle;
 
     void Start()
@@ -64,10 +63,5 @@ public class PlanetaryVisualizer : MonoBehaviour
         float radius_ratio = polarPosition.x / get_max_radius();
         float radius = max_radius * radius_ratio;
         return new Vector2(radius * Mathf.Sin(polarPosition.y), radius * Mathf.Cos(polarPosition.y));
-    }
-
-    public void LaunchPlanet()
-    {
-        roguePlanet.GetComponent<Trajectory>().StartSimulation();
     }
 }

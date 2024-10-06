@@ -24,7 +24,7 @@ public class TrajectoryRenderer : MonoBehaviour
             foreach (GameObject point in renderedTrajectory[i])
             {
                 Color color = point.GetComponent<SpriteRenderer>().color;
-                color.a = ((float)(i+1))/(renderedTrajectory.Count+1);
+                color.a = ((float)(i+1))/(1.25f*(renderedTrajectory.Count+1));
                 point.GetComponent<SpriteRenderer>().color = color;
             }
         }
