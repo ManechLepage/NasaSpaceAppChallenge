@@ -16,8 +16,14 @@ public class TrajectoryRenderer : MonoBehaviour
     }
     public void deleteTrajectory()
     {
-        foreach (GameObject point in renderedTrajectory) {
-            Destroy(point);
+        for (int i = 0; i < renderedTrajectory.Count; i++)
+        {
+            foreach (GameObject point in renderedTrajectory[i])
+            {
+                Color color = point.GetComponent<SpriteRenderer>().color;
+                color.a = ((float)(i+1))/(1.25f*(renderedTrajectory.Count+1));
+                point.GetComponent<SpriteRenderer>().color = color;
+            }
         }
         renderedTrajectory.Clear();
     }
