@@ -11,6 +11,7 @@ public class ScoreCalculator : MonoBehaviour
         if (other.gameObject.CompareTag("RoguePlanet"))
         {
             other.gameObject.GetComponent<Trajectory>().running = false;
+            other.gameObject.SetActive(false);
             gameManager.GetComponent<GameManager>().score += CalculateScore(other.gameObject.transform.position.y);
         }
     }

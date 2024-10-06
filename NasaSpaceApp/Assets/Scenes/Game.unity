@@ -1921,6 +1921,7 @@ MonoBehaviour:
   planetPrefab: {fileID: 5237359436996278333, guid: ef2aedbc2f3518644b544a981c3f4908, type: 3}
   max_radius: 8.5
   roguePlanet: {fileID: 1056810589}
+  angle: {fileID: 1319182436}
 --- !u!1 &1290932792
 GameObject:
   m_ObjectHideFlags: 0
