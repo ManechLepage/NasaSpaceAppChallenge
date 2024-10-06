@@ -20,7 +20,7 @@ public class LoreManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             index++;
             if (index == currentTexts.Count)
