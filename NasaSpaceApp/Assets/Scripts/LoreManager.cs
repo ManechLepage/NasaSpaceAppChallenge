@@ -31,7 +31,7 @@ public class LoreManager : MonoBehaviour
                     index = 0;
                 }
 
-                GameManager.instance.ChangeScene("Game");
+                GameManager.instance.ChangeScene("Mission");
             }
             else
             {
