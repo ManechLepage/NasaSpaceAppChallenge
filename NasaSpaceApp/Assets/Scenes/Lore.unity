@@ -1817,9 +1817,6 @@ MonoBehaviour:
   - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
     of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
     After that, your last input will be final. Proceed with caution '
-  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
-    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
-    After that, your last input will be final. Proceed with caution '
   - '[...]'
   level1Texts:
   - 'Level 1: RAN'
