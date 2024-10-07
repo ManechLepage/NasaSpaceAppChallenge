@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lore.unity
     guid: b90437b5b0fa8b944b25c62d4f392126
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mission.unity
     guid: 701b6945d51dbbc408d9366b85395449
   m_configObjects: {}
