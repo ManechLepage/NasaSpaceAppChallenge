@@ -1873,8 +1873,32 @@ MonoBehaviour:
   - 'HAL: This fascinating system is home to 8 planets, all orbiting a red dwarf,
     just like K2-3. Of those 8 planets, 2 are significantly more massive than the
     others, so watch out for their huge gravitational field as you try to get by
-    them.  '
-  level4Texts: []
+    them.  However, this also means you can mostly ignore the effect of the other
+    planets - but not always!'
+  level4Texts:
+  - 'Final Level: TRAPPIST-1 '
+  - "HAL: Welcome to the final destination on our mission: TRAPPIST-1. This is quite
+    an important system: it has captured the public\u2019s attention in an unprecedented
+    way since it was discovered in 1999. Its dynamics have even been transformed
+    into music. "
+  - 'HAL: At the center of this system nestles a diminutive red dwarf only slightly
+    larger than Jupiter and 9% the mass of the sun. This means that the habitable
+    zone, the range of orbits in which it is neither too hot nor too cold for liquid
+    water to form, is quite close to the star. This puts TRAPPIST-1d, e, f and g
+    squarely inside it. Since TRAPPIST-1 is so close to the Earth, only 41 light-years,
+    it is easy to observe and study those planets.  '
+  - 'HAL: Unfortunately, despite this, it is unlikely that these planets host life,
+    due to the intense radiation they receive from the star and the interaction with
+    its magnetic field stripping away the atmosphere. They are also all likely tidally-locked,
+    meaning the same face of the planet always face the star and the other way away
+    from it. In other words, there is no day-night cycle, meaning one side of the
+    planet could be a scorching desert and the other a vast ice field. Part of the
+    reason we were sent on this mission was to see if we missed anything here. '
+  - "HAL: TRAPPIST-1 is rich in planets, containing a healthy 7. These planets are
+    all very close to the star and orbit very quickly. Although they are not very
+    dense or massive, all possessing comparable masses to the Earth, their rapid
+    movement can nevertheless throw you off course in subtle ways. You\u2019ll have
+    to use the intuition you have developed to navigate this one. Good luck! "
   endGameTexts: []
   label: {fileID: 851823177}
   soundEffect: {fileID: 897916720}
