@@ -1527,7 +1527,12 @@ MonoBehaviour:
   - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
     of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
     After that, your last input will be final. Proceed with caution '
+  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
+    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
+    After that, your last input will be final. Proceed with caution '
+  - '[...]'
   level1Texts:
+  - 'Level 1: RAN'
   - 'HAL: We will soon be entering RAN, a star system also known as Epsilon Eridani
     situated over 11 light years away. If you were to fly here on an airplane it
     would take over 12 million years! '
@@ -1544,7 +1549,7 @@ MonoBehaviour:
     with concentric rings around the planet. The larger the rings, the stronger our
     rogue planet will be attracted towards it.  '
   - "HAL: Use your wit and your creativity to modify our vessel\u2019s trajectory.
-    hit the green band for the optimal trajectory  "
+    Hit the GREEN BAND for the optimal trajectory  "
   - 'HAL: Remember, the less fuel you use, the more we will have available to come
     back home. Good luck! '
   level2Texts:
