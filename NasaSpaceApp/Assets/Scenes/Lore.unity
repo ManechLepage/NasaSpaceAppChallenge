@@ -1840,19 +1840,22 @@ MonoBehaviour:
   - 'HAL: Remember, the less fuel you use, the more we will have available to come
     back home. Good luck! '
   level2Texts:
+  - "HAL: As we\u2019ve just experienced in this tumultuous ride, the effects of
+    gravity have massive effects on our trajectory. We too saw that even the slightest
+    of changes in the initial parameters lead to vast differences in the trajectory.   "
   - 'Level 2: K2-3 '
-  - 'Our next stop is the K2-3 system. Its name comes from the fact that it contains
+  - 'HAL: Our next stop is the K2-3 system. Its name comes from the fact that it contains
     the third exoplanet discovered during K2, the second mission of the famous Kepler
     space telescope. It is over 144 light-years away, which equates to a 2 billion
     year car ride. '
-  - ' The star of this system is K2-3a, a red dwarf. If it were just a bit hotter,
+  - 'HAL: The star of this system is K2-3a, a red dwarf. If it were just a bit hotter,
     it would be considered an orange dwarf like Epsilon Eridani, but it isn''t quite
     there.   '
-  - The three planets of this system are all very close to their star. The furthest
+  - 'HAL: The three planets of this system are all very close to their star. The furthest
     one is only 1/5 the Earth-Sun distance from its star! Unlike the solar system,
     these planets actually get lighter as they get further from the star, so watch
-    out for K2-3b, a watery world more than 5 times the mass of the Earth.
-  - "By now, you should have gotten used to the tricks gravity can play on you. Last
+    out for K2-3b, a watery world more than 5 times the mass of the Earth.'
+  - "HAL: By now, you should have gotten used to the tricks gravity can play on you. Last
     time though, there was only one planet to consider and it didn\u2019t move much.
     This time, there are more planets and they are orbiting a lot faster. A K2-3b
     year is only 10 Earth days! Try to use the time slider to get the planets into
