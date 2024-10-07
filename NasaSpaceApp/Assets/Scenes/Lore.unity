@@ -1842,9 +1842,21 @@ MonoBehaviour:
   - 'HAL: Remember, the less fuel you use, the more we will have available to come
     back home. Good luck! '
   level2Texts:
-  - 4
-  - 5
-  - 6
+  - "HAL: As we\u2019ve just experienced in this tumultuous ride, the effects of
+    gravity have massive effects on our trajectory. We too saw that even the slightest
+    of changes in the initial parameters lead to vast differences in the trajectory.   "
+  - '                                       Level 2: K2-3'
+  - 'HAL: The next stop on our interstellar odyssey is K2-3, also known as EPIC 201367065.
+    It is situated 144 light years away, that''s almost 3529492230 times the distance
+    from the moon to the earth! '
+  - 'HAL: Its star bearing the same name as the system, is an M-type star, a red
+    dwarf. It''s the same type of star as Proxima Centauri, the closest Star to our
+    Sun.  '
+  - 'HAL: Its three orbiting planets are very similar to our planet, they are denominated
+    Super Earths for their similar characteristics and large size. '
+  - "HAL: The main difficulty in this system will be balancing the gravity\u2019s
+    of the 3 planets. Don't forget to use the time of entry to your advantage. Good
+    luck! "
   level3Texts:
   - 7
   - 8
