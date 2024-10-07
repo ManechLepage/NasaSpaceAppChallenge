@@ -750,7 +750,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 10.400002}
-  m_SizeDelta: {x: 212, y: 50}
+  m_SizeDelta: {x: 260, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760272715
 MonoBehaviour:
@@ -774,8 +774,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press Space to continue...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
-  m_sharedMaterial: {fileID: 4249066472039540760, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
+  m_sharedMaterial: {fileID: 4811315010819168028, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -799,8 +799,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -992,8 +992,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
-  m_sharedMaterial: {fileID: 4249066472039540760, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
+  m_sharedMaterial: {fileID: 4811315010819168028, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1017,8 +1017,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1844,22 +1844,22 @@ MonoBehaviour:
     gravity have massive effects on our trajectory. We too saw that even the slightest
     of changes in the initial parameters lead to vast differences in the trajectory.   "
   - 'Level 2: K2-3 '
-  - 'HAL: Our next stop is the K2-3 system. Its name comes from the fact that it contains
-    the third exoplanet discovered during K2, the second mission of the famous Kepler
-    space telescope. It is over 144 light-years away, which equates to a 2 billion
-    year car ride. '
+  - 'HAL: Our next stop is the K2-3 system. Its name comes from the fact that it
+    contains the third exoplanet discovered during K2, the second mission of the
+    famous Kepler space telescope. It is over 144 light-years away, which equates
+    to a 2 billion year car ride. '
   - 'HAL: The star of this system is K2-3a, a red dwarf. If it were just a bit hotter,
     it would be considered an orange dwarf like Epsilon Eridani, but it isn''t quite
     there.   '
-  - 'HAL: The three planets of this system are all very close to their star. The furthest
-    one is only 1/5 the Earth-Sun distance from its star! Unlike the solar system,
-    these planets actually get lighter as they get further from the star, so watch
-    out for K2-3b, a watery world more than 5 times the mass of the Earth.'
-  - "HAL: By now, you should have gotten used to the tricks gravity can play on you. Last
-    time though, there was only one planet to consider and it didn\u2019t move much.
-    This time, there are more planets and they are orbiting a lot faster. A K2-3b
-    year is only 10 Earth days! Try to use the time slider to get the planets into
-    a better configuration.  "
+  - 'HAL: The three planets of this system are all very close to their star. The
+    furthest one is only 1/5 the Earth-Sun distance from its star! Unlike the solar
+    system, these planets actually get lighter as they get further from the star,
+    so watch out for K2-3b, a watery world more than 5 times the mass of the Earth.'
+  - "HAL: By now, you should have gotten used to the tricks gravity can play on you.
+    Last time though, there was only one planet to consider and it didn\u2019t move
+    much. This time, there are more planets and they are orbiting a lot faster. A
+    K2-3b year is only 10 Earth days! Try to use the time slider to get the planets
+    into a better configuration.  "
   level3Texts:
   - 7
   - 8
