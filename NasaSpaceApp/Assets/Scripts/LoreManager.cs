@@ -6,9 +6,10 @@ using TMPro;
 public class LoreManager : MonoBehaviour
 {
     public List<string> tutorialTexts;
-    public List<string> level1Texts;
-    public List<string> level2Texts;
-    public List<string> level3Texts;
+    public List<string> level1Texts; //epsilon eridani
+    public List<string> level2Texts; // k2-3
+    public List<string> level3Texts; // Kepler-90
+    public List<string> level4Texts; // TRAPPIST-1
     public List<string> endGameTexts;
     public GameObject label;
     private int index = 0;
@@ -27,6 +28,9 @@ public class LoreManager : MonoBehaviour
                 break;
             case 3:
                 currentTexts = level3Texts;
+                break;
+            case 4:
+                currentTexts = level4Texts;
                 break;
             default:
                 currentTexts = endGameTexts;
@@ -69,6 +73,9 @@ public class LoreManager : MonoBehaviour
                             break;
                         case 3:
                             currentTexts = level3Texts;
+                            break;
+                        case 4:
+                            currentTexts = level4Texts;
                             break;
                     }
                     index = 0;
