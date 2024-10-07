@@ -1495,6 +1495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   planetarySystems:
+  - {fileID: 11400000, guid: 30709d4e74c5f3940988bc2b89a53668, type: 2}
   - {fileID: 11400000, guid: e16d761125d1462439a95002f2ba9d7b, type: 2}
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
   - {fileID: 11400000, guid: 6cc2ff482cc7d2b488df1eb3d41c7fe7, type: 2}
@@ -1813,9 +1814,6 @@ MonoBehaviour:
     the gravitational pull of the celestial objects littered in these systems.  '
   - 'HAL: Using leftover thrusters from our damaged spacecraft, I can help you change
     our VELOCITY,  our ANGLE, and ever so slightly, our TIME of approach.  '
-  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
-    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
-    After that, your last input will be final. Proceed with caution '
   - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
     of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
     After that, your last input will be final. Proceed with caution '

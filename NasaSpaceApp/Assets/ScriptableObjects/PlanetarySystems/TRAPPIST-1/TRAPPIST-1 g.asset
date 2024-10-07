@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c6d280078697a4da05d1b48ea874ec, type: 3}
+  m_Name: TRAPPIST-1 g
+  m_EditorClassIdentifier: 
+  semiMajor: 7.005768
+  eccentricity: 0
+  mass: 7.889276
+  period: 1071360
+  initialPosition: -121437.67
+  radius: 7192859
+  color: {r: 0.764151, g: 0.6471206, b: 0.49381453, a: 1}
+  type: 0

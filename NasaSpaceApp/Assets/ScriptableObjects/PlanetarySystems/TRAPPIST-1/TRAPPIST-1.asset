@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b26d829ab0a2f244a706b5aac0e28c1, type: 3}
+  m_Name: TRAPPIST-1
+  m_EditorClassIdentifier: 
+  star: {fileID: 11400000, guid: 62257c595ca311a47b3ff61501047166, type: 2}
+  planets:
+  - {fileID: 11400000, guid: 2cf37033bb9b07941856b0c87c5be85c, type: 2}
+  - {fileID: 11400000, guid: 1fa142419c6d50a4192f27fd18353c96, type: 2}
+  - {fileID: 11400000, guid: 2c0c23b14db7df1498ee2d7cd335f852, type: 2}
+  - {fileID: 11400000, guid: 541d4811c01b8d642a144d364074a1f4, type: 2}
+  - {fileID: 11400000, guid: 4462885c6f831c74bb5ab0e2878cffcc, type: 2}
+  - {fileID: 11400000, guid: d391457c5f74a0f4781d9733ce31ac9c, type: 2}
+  - {fileID: 11400000, guid: 5a70d05704df78c468e4df6216142abf, type: 2}
