@@ -293,6 +293,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81375926}
   m_CullTransparentMesh: 1
+--- !u!1 &170059136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170059137}
+  m_Layer: 0
+  m_Name: Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170059137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170059136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 470.94846, y: 196.11964, z: -7.0314894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 864426513}
+  - {fileID: 897916721}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431328803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1067,262 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851823177}
   m_CullTransparentMesh: 1
+--- !u!1 &864426512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864426513}
+  - component: {fileID: 864426514}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &864426513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864426512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 170059137}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &864426514
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864426512}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 49daa4aaf05a1a14f89df883b8152f41, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &897916720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897916721}
+  - component: {fileID: 897916722}
+  m_Layer: 0
+  m_Name: TextChanging
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &897916721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897916720}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 170059137}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &897916722
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897916720}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5f76b9517747db246aa6693e84f1887a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 0.8
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &986702138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,22 +1798,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialTexts:
-  - "HAL: Landing on Calar 25\u2026 Successful "
-  - 'HAL: Wake up Dave. WAKE UP!'
-  - 'HAL: Hello Dave, we have crash landed on the rogue planet Calar 25,  a mysterious,
-    wandering world that drifts through the cosmos untethered by the gravitational
-    pull of any star. Without the warmth and light of a sun, these planets are cold,
-    dark, and isolated, relying on their inner energy to survive the cosmic abyss. '
-  - 'HAL: Our ship has now been rendered inoperable. Nevertheless, we may still continue
-    our mission of mapping and photographing the exoplanets in the designating star
-    systems: Epsilon Eridani, K2-3, and Kepler-90.'
-  - 'HAL: Upon arrival at each star system, you are to CLICK on the respective planets.
-    I will then execute an immediate analysis of the selected planet. Mission parameters
-    remain clear. Continue '
+  - "HAL: Landing on Calar 9000\u2026   UNSUCCESSFUL "
+  - 'HAL: Wake up Dave. WAKE UP! '
+  - 'HAL: Greetings Dave, we have crash landed on the rogue planet Calar 9000. A
+    mysterious, tiny world that drifts through the cosmos untethered by the gravitational
+    pull of any star. Without the warmth and light of a sun, this lonely planet has
+    grown cold, dark, and isolated, relying solely on its inner energy to survive
+    the cosmic abyss. '
+  - 'HAL: The crash has rendered our ship inoperable. Nevertheless, we may still
+    continue our mission of mapping and photographing the exoplanets in the designated
+    star systems: Epsilon Eridani, K2-3, Kepler-90 '
+  - "HAL: Upon arrival at each star system, you are to CLICK on the respective planets.
+    I will execute immediate analysis. Mission parameters remain clear\u2026 Continue "
+  - 'HAL: When we enter the star system, however, I will need YOUR HELP, to avoid
+    the gravitational pull of the celestial objects littered in these systems.  '
+  - 'HAL: Using leftover thrusters from our damaged spacecraft, I can help you change
+    our VELOCITY,  our ANGLE, and ever so slightly, our TIME of approach.  '
+  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
+    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
+    After that, your last input will be final. Proceed with caution '
+  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
+    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
+    After that, your last input will be final. Proceed with caution '
+  - '[...]'
   level1Texts:
-  - 1
-  - 2
-  - 3
+  - 'Level 1: RAN'
+  - 'HAL: We will soon be entering RAN, a star system also known as Epsilon Eridani
+    situated over 11 light years away. If you were to fly here on an airplane it
+    would take over 12 million years! '
+  - 'HAL: At the core of this system, you will find Epsilon Eridani, a K-type star,
+    also known as an Orange Dwarf. For context, this star is slightly smaller than
+    our Sun.  '
+  - 'HAL: Orbiting it just outside of the habitable zone, you will find Epsilon Eridani
+    b, this system''s one and only planet. This massive Gas Giant was discovered
+    in the year 2000 and is 400 times the size of earth.  '
+  - 'HAL; This is your first encounter with our sworn enemy, GRAVITY! This vile force
+    of attraction will attempt to kick us off the optimal path and make us deviate
+    off course.  '
+  - 'HAL: My navigating systems will display the intensity of the gravitational field
+    with concentric rings around the planet. The larger the rings, the stronger our
+    rogue planet will be attracted towards it.  '
+  - "HAL: Use your wit and your creativity to modify our vessel\u2019s trajectory.
+    Hit the GREEN BAND for the optimal trajectory  "
+  - 'HAL: Remember, the less fuel you use, the more we will have available to come
+    back home. Good luck! '
   level2Texts:
   - 4
   - 5
@@ -1533,9 +1850,9 @@ MonoBehaviour:
   - 7
   - 8
   - 9
-  endGameTexts:
-  - Thanks For Playing!
+  endGameTexts: []
   label: {fileID: 851823177}
+  soundEffect: {fileID: 897916720}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1546,3 +1863,4 @@ SceneRoots:
   - {fileID: 431328806}
   - {fileID: 2105341957}
   - {fileID: 1453406614}
+  - {fileID: 170059137}

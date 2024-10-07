@@ -13,6 +13,7 @@ public class LoreManager : MonoBehaviour
     public GameObject label;
     private int index = 0;
     private List<string> currentTexts;
+    public GameObject soundEffect;
 
     void Start()
     {
@@ -48,6 +49,7 @@ public class LoreManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
+            soundEffect.GetComponent<AudioSource>().Play();
             index++;
             if (index == currentTexts.Count)
             {
