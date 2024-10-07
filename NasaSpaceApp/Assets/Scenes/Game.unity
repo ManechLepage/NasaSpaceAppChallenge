@@ -3282,7 +3282,7 @@ MonoBehaviour:
   data: {fileID: 1594215835}
   planetVisualiser: {fileID: 1287148351}
   trajectoryRenderer: {fileID: 1605545959}
-  initialPosition: {x: -10.5, y: 4.5}
+  initialPosition: {x: -10.5, y: 2.5}
   angleArrow: {fileID: 1319182436}
   time: 0
   initialVelocity: 0
@@ -3300,7 +3300,7 @@ Transform:
   m_GameObject: {fileID: 1056810589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.5, y: 4.5, z: 0.061853}
+  m_LocalPosition: {x: -10.5, y: 2.5, z: 0.061853}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
