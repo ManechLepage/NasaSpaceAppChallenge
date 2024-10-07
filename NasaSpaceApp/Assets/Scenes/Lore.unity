@@ -1495,10 +1495,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   planetarySystems:
-  - {fileID: 11400000, guid: 30709d4e74c5f3940988bc2b89a53668, type: 2}
   - {fileID: 11400000, guid: e16d761125d1462439a95002f2ba9d7b, type: 2}
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
   - {fileID: 11400000, guid: 6cc2ff482cc7d2b488df1eb3d41c7fe7, type: 2}
+  - {fileID: 11400000, guid: 30709d4e74c5f3940988bc2b89a53668, type: 2}
   level: 1
   currentSystem: {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
 --- !u!1 &1493687227
@@ -1840,13 +1840,28 @@ MonoBehaviour:
   - 'HAL: Remember, the less fuel you use, the more we will have available to come
     back home. Good luck! '
   level2Texts:
-  - 4
-  - 5
-  - 6
+  - 'Level 2: K2-3 '
+  - 'Our next stop is the K2-3 system. Its name comes from the fact that it contains
+    the third exoplanet discovered during K2, the second mission of the famous Kepler
+    space telescope. It is over 144 light-years away, which equates to a 2 billion
+    year car ride. '
+  - ' The star of this system is K2-3a, a red dwarf. If it were just a bit hotter,
+    it would be considered an orange dwarf like Epsilon Eridani, but it isn''t quite
+    there.   '
+  - The three planets of this system are all very close to their star. The furthest
+    one is only 1/5 the Earth-Sun distance from its star! Unlike the solar system,
+    these planets actually get lighter as they get further from the star, so watch
+    out for K2-3b, a watery world more than 5 times the mass of the Earth.
+  - "By now, you should have gotten used to the tricks gravity can play on you. Last
+    time though, there was only one planet to consider and it didn\u2019t move much.
+    This time, there are more planets and they are orbiting a lot faster. A K2-3b
+    year is only 10 Earth days! Try to use the time slider to get the planets into
+    a better configuration.  "
   level3Texts:
   - 7
   - 8
   - 9
+  level4Texts: []
   endGameTexts: []
   label: {fileID: 851823177}
   soundEffect: {fileID: 897916720}
