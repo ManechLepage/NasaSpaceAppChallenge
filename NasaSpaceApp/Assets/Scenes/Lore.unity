@@ -1539,6 +1539,8 @@ MonoBehaviour:
   - 7
   - 8
   - 9
+  endGameTexts:
+  - Thanks For Playing!
   label: {fileID: 851823177}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
