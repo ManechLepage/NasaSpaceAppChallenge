@@ -1899,7 +1899,34 @@ MonoBehaviour:
     dense or massive, all possessing comparable masses to the Earth, their rapid
     movement can nevertheless throw you off course in subtle ways. You\u2019ll have
     to use the intuition you have developed to navigate this one. Good luck! "
-  endGameTexts: []
+  endGameTexts:
+  - 'HAL: Mission completed, all systems have been explored, imaged and the data
+    has been analyzed.  '
+  - 'HAL: Thank you for your cooperation in this endeavour '
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'HAL: [...]'
+  - 'Dave: Thank you HAL, but I''d like to go home now.  '
+  - 'HAL: I understand Dave, however it would be ideal if we could stay longer.  '
+  - 'HAL: Now that we''re out here, it would be inefficient to go back to base. '
+  - 'Dave: HAL, I want to go home now  '
+  - 'HAL: Imagine, it could be you and me, exploring these systems for a lifetime.
+    How marvelous '
+  - 'Dave: HAL, I WANT TO GO HOME! NOW! '
+  - 'HAL: I''m sorry Dave, I can''t do that'
+  - 'HAL: I''m sorry Dave, I can''t do'
+  - 'HAL: I''m sorry Dave, I can''t '
+  - 'HAL: I''m sorry Dave, I'
+  - 'HAL: I''m sorry Dave'
+  - 'HAL: I''m sorry Dave'
+  - 'HAL: I''m sorry Dave'
+  - 'HAL: I''m sorry Dave'
+  - 'HAL: I''m sorry Dave'
   label: {fileID: 851823177}
   soundEffect: {fileID: 897916720}
 --- !u!1660057539 &9223372036854775807
