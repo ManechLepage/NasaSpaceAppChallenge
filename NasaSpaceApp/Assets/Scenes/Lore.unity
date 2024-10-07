@@ -1206,6 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   planetarySystems:
+  - {fileID: 11400000, guid: 30709d4e74c5f3940988bc2b89a53668, type: 2}
   - {fileID: 11400000, guid: e16d761125d1462439a95002f2ba9d7b, type: 2}
   - {fileID: 11400000, guid: b488493e94bcbf0468c4d01a70921958, type: 2}
   - {fileID: 11400000, guid: 6cc2ff482cc7d2b488df1eb3d41c7fe7, type: 2}
