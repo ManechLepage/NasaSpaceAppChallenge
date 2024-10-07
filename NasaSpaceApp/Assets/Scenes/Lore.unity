@@ -750,7 +750,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 10.400002}
-  m_SizeDelta: {x: 212, y: 50}
+  m_SizeDelta: {x: 230, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760272715
 MonoBehaviour:
@@ -774,8 +774,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press Space to continue...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
-  m_sharedMaterial: {fileID: 4249066472039540760, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
+  m_sharedMaterial: {fileID: 4811315010819168028, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -799,8 +799,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -992,8 +992,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
-  m_sharedMaterial: {fileID: 4249066472039540760, guid: 479a1052337ef904b9cd801bc087d302, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
+  m_sharedMaterial: {fileID: 4811315010819168028, guid: a68ceae0a4e7ed448a0ab36d915c9886, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1017,8 +1017,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1861,29 +1861,19 @@ MonoBehaviour:
     K2-3b year is only 10 Earth days! Try to use the time slider to get the planets
     into a better configuration.  "
   level3Texts:
-  - 'Final Level: TRAPPIST-1 '
-  - "HAL: Welcome to the final destination on our mission: TRAPPIST-1. This is quite
-    an important system: it has captured the public\u2019s attention in an unprecedented
-    way since it was discovered in 1999. Its dynamics have even been transformed
-    into music. "
-  - 'HAL: At the center of this system nestles a diminutive red dwarf only slightly
-    larger than Jupiter and 9% the mass of the sun. This means that the habitable
-    zone, the range of orbits in which it is neither too hot nor too cold for liquid
-    water to form, is quite close to the star. This puts TRAPPIST-1d, e, f and g
-    squarely inside it. Since TRAPPIST-1 is so close to the Earth, only 41 light-years,
-    it is easy to observe and study those planets.  '
-  - 'HAL: Unfortunately, despite this, it is unlikely that these planets host life,
-    due to the intense radiation they receive from the star and the interaction with
-    its magnetic field stripping away the atmosphere. They are also all likely tidally-locked,
-    meaning the same face of the planet always face the star and the other way away
-    from it. In other words, there is no day-night cycle, meaning one side of the
-    planet could be a scorching desert and the other a vast ice field. Part of the
-    reason we were sent on this mission was to see if we missed anything here. '
-  - "HAL: TRAPPIST-1 is rich in planets, containing a healthy 7. These planets are
-    all very close to the star and orbit very quickly. Although they are not very
-    dense or massive, all possessing comparable masses to the Earth, their rapid
-    movement can nevertheless throw you off course in subtle ways. You\u2019ll have
-    to use the intuition you have developed to navigate this one. Good luck! "
+  - 'HAL: As you might have realised, all these planets have something in common:
+    they''re all very far away from our earth. In fact, that''s why we call them
+    exoplanets, as they are planets that exist outside of our solar system.  '
+  - 'HAL: This next star system is even further than the others. We can find it 2767
+    light years away from Earth.  I encourage you to go find it in your personal
+    database before I announce it!'
+  - 'Level 3: Kepler-90'
+  - 'HAL: Welcome to Kepler-90, a star system so far away, we would need to traverse
+    our solar system over 1383 times to reach it! '
+  - 'HAL: This fascinating system is home to 8 planets, all orbiting a red dwarf,
+    just like K2-3. Of those 8 planets, 2 are significantly more massive than the
+    others, so watch out for their huge gravitational field as you try to get by
+    them.  However, this also means you can mostly ignore the effect of the other planets - but not always!'
   level4Texts: []
   endGameTexts: []
   label: {fileID: 851823177}
