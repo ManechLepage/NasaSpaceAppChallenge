@@ -109,7 +109,6 @@ public class Trajectory : MonoBehaviour
             position += velocity * timeStep / numSubSteps * Time.deltaTime;
             //calculate new velocity
             velocity += acceleration * timeStep / numSubSteps * Time.deltaTime;
-            Debug.Log("dt: " + Time.deltaTime);
         }
         angleArrow.transform.localRotation = Quaternion.Euler(0, 0, -Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg);
         angleArrow.transform.localScale = new Vector3(1, velocity.magnitude * 400, 1);
