@@ -3722,7 +3722,7 @@ MonoBehaviour:
   time: 0
   initialVelocity: 0
   initialAngle: 0
-  timeStep: 10
+  timeStep: 2000
   numSubSteps: 1
   running: 0
   maxAccel: 0

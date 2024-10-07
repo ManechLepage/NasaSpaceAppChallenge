@@ -84,7 +84,7 @@ public class Trajectory : MonoBehaviour
         }
         count++;
         for (int i = 0; i < numSubSteps; i++) {
-            SetTime((time + timeStep * 5 / numSubSteps));
+            SetTime((time + timeStep * 2.5e-2f / numSubSteps));
             Vector2 acceleration = new Vector2(0, 0);
             //calculate positions of planets
             foreach (PlanetData planet in GameManager.instance.currentSystem.planets) {
@@ -106,9 +106,10 @@ public class Trajectory : MonoBehaviour
             float solarAccelerationMag = Gadjusted * GameManager.instance.currentSystem.star.mass / (solarDistance * solarDistance);
             acceleration += solarAccelerationMag * directionToSun.normalized / 10e8f;
             //calculate new position
-            position += velocity * timeStep / numSubSteps;
+            position += velocity * timeStep / numSubSteps * Time.deltaTime;
             //calculate new velocity
-            velocity += acceleration * timeStep / numSubSteps;
+            velocity += acceleration * timeStep / numSubSteps * Time.deltaTime;
+            Debug.Log("dt: " + Time.deltaTime);
         }
         angleArrow.transform.localRotation = Quaternion.Euler(0, 0, -Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg);
         angleArrow.transform.localScale = new Vector3(1, velocity.magnitude * 400, 1);
