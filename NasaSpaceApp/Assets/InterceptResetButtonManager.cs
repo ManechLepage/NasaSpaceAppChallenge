@@ -9,7 +9,8 @@ public class InterceptResetButtonManager : MonoBehaviour
 
     public void Clicked()
     {
-        planetDataManager.DidScore(0);
+        if (planetDataManager.time != 0)
+            planetDataManager.DidScore(0);
         trajectory.Reset();
     }
 }

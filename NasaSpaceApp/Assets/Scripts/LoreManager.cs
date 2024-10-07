@@ -9,21 +9,26 @@ public class LoreManager : MonoBehaviour
     public List<string> level1Texts;
     public List<string> level2Texts;
     public List<string> level3Texts;
+    public List<string> endGameTexts;
     public GameObject label;
     private int index = 0;
     private List<string> currentTexts;
 
     void Start()
     {
-        currentTexts = tutorialTexts;
-
         switch (GameManager.instance.level)
         {
+            case 1:
+                currentTexts = tutorialTexts;
+                break;
             case 2:
                 currentTexts = level2Texts;
                 break;
             case 3:
                 currentTexts = level3Texts;
+                break;
+            default:
+                currentTexts = endGameTexts;
                 break;
         }
         
@@ -46,7 +51,11 @@ public class LoreManager : MonoBehaviour
             index++;
             if (index == currentTexts.Count)
             {
-                if (currentTexts == tutorialTexts)
+                if (currentTexts == endGameTexts)
+                {
+                    index--;
+                }
+                else if (currentTexts == tutorialTexts)
                 {
                     switch(GameManager.instance.level)
                     {
