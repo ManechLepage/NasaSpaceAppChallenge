@@ -6,6 +6,7 @@ using UnityEngine;
 public class ScoreCalculator : MonoBehaviour
 {
     public PlanetDataManager planetDataManager;
+    public GameObject soundEffect;
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +16,7 @@ public class ScoreCalculator : MonoBehaviour
             //other.gameObject.SetActive(false);
             planetDataManager.DidScore(CalculateScore(other.gameObject.transform.position.y));
             other.gameObject.GetComponent<Trajectory>().Reset();
+            soundEffect.GetComponent<AudioSource>().Play();
         }
     }
 
