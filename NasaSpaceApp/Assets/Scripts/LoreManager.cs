@@ -85,7 +85,10 @@ public class LoreManager : MonoBehaviour
                     GameManager.instance.ChangeScene("Game");
                 }
             }
-            label.GetComponent<TextMeshProUGUI>().text = currentTexts[index];
+            if (index < currentTexts.Count && currentTexts.Count != 0)
+            {
+                label.GetComponent<TextMeshProUGUI>().text = currentTexts[index];
+            }
         }
     }
 }
