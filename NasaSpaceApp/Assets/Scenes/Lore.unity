@@ -1816,13 +1816,18 @@ MonoBehaviour:
   - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
     of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
     After that, your last input will be final. Proceed with caution '
+  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
+    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
+    After that, your last input will be final. Proceed with caution '
+  - '[...]'
   level1Texts:
+  - 'Level 1: RAN'
   - 'HAL: We will soon be entering RAN, a star system also known as Epsilon Eridani
     situated over 11 light years away. If you were to fly here on an airplane it
     would take over 12 million years! '
   - 'HAL: At the core of this system, you will find Epsilon Eridani, a K-type star,
     also known as an Orange Dwarf. For context, this star is slightly smaller than
-    our planet Earth.  '
+    our Sun.  '
   - 'HAL: Orbiting it just outside of the habitable zone, you will find Epsilon Eridani
     b, this system''s one and only planet. This massive Gas Giant was discovered
     in the year 2000 and is 400 times the size of earth.  '
@@ -1833,7 +1838,7 @@ MonoBehaviour:
     with concentric rings around the planet. The larger the rings, the stronger our
     rogue planet will be attracted towards it.  '
   - "HAL: Use your wit and your creativity to modify our vessel\u2019s trajectory.
-    hit the green band for the optimal trajectory  "
+    Hit the GREEN BAND for the optimal trajectory  "
   - 'HAL: Remember, the less fuel you use, the more we will have available to come
     back home. Good luck! '
   level2Texts:
