@@ -1844,26 +1844,46 @@ MonoBehaviour:
     gravity have massive effects on our trajectory. We too saw that even the slightest
     of changes in the initial parameters lead to vast differences in the trajectory.   "
   - 'Level 2: K2-3 '
-  - 'HAL: Our next stop is the K2-3 system. Its name comes from the fact that it contains
-    the third exoplanet discovered during K2, the second mission of the famous Kepler
-    space telescope. It is over 144 light-years away, which equates to a 2 billion
-    year car ride. '
+  - 'HAL: Our next stop is the K2-3 system. Its name comes from the fact that it
+    contains the third exoplanet discovered during K2, the second mission of the
+    famous Kepler space telescope. It is over 144 light-years away, which equates
+    to a 2 billion year car ride. '
   - 'HAL: The star of this system is K2-3a, a red dwarf. If it were just a bit hotter,
     it would be considered an orange dwarf like Epsilon Eridani, but it isn''t quite
     there.   '
-  - 'HAL: The three planets of this system are all very close to their star. The furthest
-    one is only 1/5 the Earth-Sun distance from its star! Unlike the solar system,
-    these planets actually get lighter as they get further from the star, so watch
-    out for K2-3b, a watery world more than 5 times the mass of the Earth.'
-  - "HAL: By now, you should have gotten used to the tricks gravity can play on you. Last
-    time though, there was only one planet to consider and it didn\u2019t move much.
-    This time, there are more planets and they are orbiting a lot faster. A K2-3b
-    year is only 10 Earth days! Try to use the time slider to get the planets into
-    a better configuration.  "
+  - 'HAL: The three planets of this system are all very close to their star. The
+    furthest one is only 1/5 the Earth-Sun distance from its star! Unlike the solar
+    system, these planets actually get lighter as they get further from the star,
+    so watch out for K2-3b, a watery world more than 5 times the mass of the Earth.'
+  - "HAL: By now, you should have gotten used to the tricks gravity can play on you.
+    Last time though, there was only one planet to consider and it didn\u2019t move
+    much. This time, there are more planets and they are orbiting a lot faster. A
+    K2-3b year is only 10 Earth days! Try to use the time slider to get the planets
+    into a better configuration.  "
   level3Texts:
-  - 7
-  - 8
-  - 9
+  - 'Final Level: TRAPPIST-1 '
+  - "HAL: Welcome to the final destination on our mission: TRAPPIST-1. This is quite
+    an important system: it has captured the public\u2019s attention in an unprecedented
+    way since it was discovered in 1999. Its dynamics have even been transformed
+    into music. "
+  - 'HAL: At the center of this system nestles a diminutive red dwarf only slightly
+    larger than Jupiter and 9% the mass of the sun. This means that the habitable
+    zone, the range of orbits in which it is neither too hot nor too cold for liquid
+    water to form, is quite close to the star. This puts TRAPPIST-1d, e, f and g
+    squarely inside it. Since TRAPPIST-1 is so close to the Earth, only 41 light-years,
+    it is easy to observe and study those planets.  '
+  - 'HAL: Unfortunately, despite this, it is unlikely that these planets host life,
+    due to the intense radiation they receive from the star and the interaction with
+    its magnetic field stripping away the atmosphere. They are also all likely tidally-locked,
+    meaning the same face of the planet always face the star and the other way away
+    from it. In other words, there is no day-night cycle, meaning one side of the
+    planet could be a scorching desert and the other a vast ice field. Part of the
+    reason we were sent on this mission was to see if we missed anything here. '
+  - "HAL: TRAPPIST-1 is rich in planets, containing a healthy 7. These planets are
+    all very close to the star and orbit very quickly. Although they are not very
+    dense or massive, all possessing comparable masses to the Earth, their rapid
+    movement can nevertheless throw you off course in subtle ways. You\u2019ll have
+    to use the intuition you have developed to navigate this one. Good luck! "
   level4Texts: []
   endGameTexts: []
   label: {fileID: 851823177}
