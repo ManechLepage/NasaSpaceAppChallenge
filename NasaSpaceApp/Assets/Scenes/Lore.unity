@@ -1508,20 +1508,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialTexts:
-  - "HAL: Landing on Calar 25\u2026 Successful "
-  - 'HAL: Wake up Dave. WAKE UP!'
-  - 'HAL: Hello Dave, we have crash landed on the rogue planet Calar 25,  a mysterious,
-    wandering world that drifts through the cosmos untethered by the gravitational
-    pull of any star. Without the warmth and light of a sun, these planets are cold,
-    dark, and isolated, relying on their inner energy to survive the cosmic abyss. '
-  - 'HAL: Our ship has now been rendered inoperable. Nevertheless, we may still continue
-    our mission of mapping and photographing the exoplanets in the designating star
-    systems: Epsilon Eridani, K2-3, and Kepler-90.'
-  - 'HAL: Upon arrival at each star system, you are to CLICK on the respective planets.
-    I will then execute an immediate analysis of the selected planet. Mission parameters
-    remain clear. Continue '
+  - "HAL: Landing on Calar 9000\u2026   UNSUCCESSFUL "
+  - 'HAL: Wake up Dave. WAKE UP! '
+  - 'HAL: Greetings Dave, we have crash landed on the rogue planet Calar 9000. A
+    mysterious, tiny world that drifts through the cosmos untethered by the gravitational
+    pull of any star. Without the warmth and light of a sun, this lonely planet has
+    grown cold, dark, and isolated, relying solely on its inner energy to survive
+    the cosmic abyss. '
+  - 'HAL: The crash has rendered our ship inoperable. Nevertheless, we may still
+    continue our mission of mapping and photographing the exoplanets in the designated
+    star systems: Epsilon Eridani, K2-3, Kepler-90 '
+  - "HAL: Upon arrival at each star system, you are to CLICK on the respective planets.
+    I will execute immediate analysis. Mission parameters remain clear\u2026 Continue "
+  - 'HAL: When we enter the star system, however, I will need YOUR HELP, to avoid
+    the gravitational pull of the celestial objects littered in these systems.  '
+  - 'HAL: Using leftover thrusters from our damaged spacecraft, I can help you change
+    our VELOCITY,  our ANGLE, and ever so slightly, our TIME of approach.  '
+  - 'HAL: Regardless of our large pool of fuel, I, however, have a limited quantity
+    of energy at my disposal. For that reason, you will have a MAXIMUM of 5 attempts.
+    After that, your last input will be final. Proceed with caution '
   level1Texts:
-  - 1
+  - we will soon be entering...
   - 2
   - 3
   level2Texts:
